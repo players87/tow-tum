@@ -1,0 +1,248 @@
+{
+	"author" : "Mod Design Team",
+//				Witchking - Leader and 3d Artist
+//				Hobbit - 2d, 3d Artist and Musician
+//				Trith - 3d Artist
+//				Sower - 2d and 3d Artist
+//				Mitlandy - 3d Artist
+//				Drwal - 2d Artist
+//				Bacus - 2d Artist",
+	"contact" : "http://www.forum.acidcave.net/topic.php?TID=1423",
+	"description" : "In every nine standard H3 town, you have oppurtunity to build one dwelling for altenative creature.",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"modType" : "Mechanics",
+	"name" : "Tides of War+New Upgrades",
+	"version" : "06.12.2020",
+	
+	"conflicts" :
+	[
+		"hota.hota balance",
+		"tides-of-war"
+	],
+	
+	"creatures" :
+	[
+		"config/creatures/necropolis/werewolf", 		//tow alternative units
+		"config/creatures/necropolis/direWerewolf",
+		"config/creatures/fortress/trollHag",
+		"config/creatures/fortress/trollWitch",
+		"config/creatures/rampart/dryad",
+		"config/creatures/rampart/oakDryad",
+		"config/creatures/inferno/sukkub",
+		"config/creatures/inferno/lilim",
+		"config/creatures/tower/drakeGolem",
+		"config/creatures/tower/dragonGolem",
+		"config/creatures/conflux/triton",
+		"config/creatures/conflux/abyssalTriton",
+		"config/creatures/castle/templar",
+		"config/creatures/castle/paladin",
+		"config/creatures/dungeon/illithid",
+		"config/creatures/dungeon/alhoon",
+		"config/creatures/stronghold/couatl",
+		"config/creatures/stronghold/quetzalcouatl",
+		"config/creatures/neutral/mermaid",
+		"config/creatures/neutral/demilich",
+		"config/creatures/neutral/ghost",
+		"config/creatures/neutral/dreadSkipper",
+		
+		"config/creatures/castle/castle",					//castle upgrades
+		"config/creatures/castle/lvl1Upg2",
+		"config/creatures/castle/lvl2Upg2",
+		"config/creatures/castle/lvl3Upg2",
+		"config/creatures/castle/lvl4Upg2",
+		"config/creatures/castle/lvl5Upg2",
+		"config/creatures/castle/lvl6Upg2",
+		"config/creatures/castle/lvl7Upg2",
+
+		"config/creatures/rampart/rampart",				//rampart upgrades
+		"config/creatures/rampart/lvl1Upg2",
+		"config/creatures/rampart/lvl2Upg2",
+		"config/creatures/rampart/lvl3Upg2",
+		"config/creatures/rampart/lvl4Upg2",
+		"config/creatures/rampart/lvl5Upg2",
+		"config/creatures/rampart/lvl6Upg2",
+		"config/creatures/rampart/lvl7Upg2",
+	
+		"config/creatures/tower/tower",					//tower upgrades
+		"config/creatures/tower/lvl1Upg2",
+		"config/creatures/tower/lvl2Upg2",
+		"config/creatures/tower/lvl3Upg2",
+		"config/creatures/tower/lvl4Upg2",
+		"config/creatures/tower/lvl5Upg2",
+		"config/creatures/tower/lvl6Upg2",
+		"config/creatures/tower/lvl7Upg2",
+
+		"config/creatures/inferno/inferno.json",				//inferno upgrades
+		"config/creatures/inferno/lvl1Upg2",
+		"config/creatures/inferno/lvl2Upg2",
+		"config/creatures/inferno/lvl3Upg2",
+		"config/creatures/inferno/lvl4Upg2",
+		"config/creatures/inferno/lvl5Upg2",
+		"config/creatures/inferno/lvl6Upg2",
+		"config/creatures/inferno/lvl7Upg2",
+
+		"config/creatures/necropolis/necropolis",			//necropolis upgrades
+		"config/creatures/necropolis/lvl1Upg2",
+		"config/creatures/necropolis/lvl2Upg2",
+		"config/creatures/necropolis/lvl3Upg2",
+		"config/creatures/necropolis/lvl4Upg2",
+		"config/creatures/necropolis/lvl5Upg2",
+		"config/creatures/necropolis/lvl6Upg2",
+		"config/creatures/necropolis/lvl7Upg2",
+
+		"config/creatures/dungeon/dungeon.json",				//dungeon upgrades
+		"config/creatures/dungeon/lvl1Upg2",
+		"config/creatures/dungeon/lvl2Upg2",
+		"config/creatures/dungeon/lvl3Upg2",
+		"config/creatures/dungeon/lvl4Upg2",
+		"config/creatures/dungeon/lvl5Upg2",
+		"config/creatures/dungeon/lvl6Upg2",
+		"config/creatures/dungeon/lvl7Upg2",
+
+		"config/creatures/stronghold/stronghold.json",			//stronghold upgrades
+		"config/creatures/stronghold/lvl1Upg2",
+		"config/creatures/stronghold/lvl2Upg2",
+		"config/creatures/stronghold/lvl3Upg2",
+		"config/creatures/stronghold/lvl4Upg2",
+		"config/creatures/stronghold/lvl5Upg2",
+		"config/creatures/stronghold/lvl6Upg2",
+		"config/creatures/stronghold/lvl7Upg2",
+		
+		"config/creatures/fortress/fortress.json",				//fortress upgrades
+		"config/creatures/fortress/lvl1Upg2",
+		"config/creatures/fortress/lvl2Upg2",
+		"config/creatures/fortress/lvl3Upg2",
+		"config/creatures/fortress/lvl4Upg2",
+		"config/creatures/fortress/lvl5Upg2",
+		"config/creatures/fortress/lvl6Upg2",
+		"config/creatures/fortress/lvl7Upg2",
+
+		"config/creatures/conflux/conflux.json",			   //conflux upgrades
+		"config/creatures/conflux/lvl1Upg2",
+		"config/creatures/conflux/lvl2Upg2",
+		"config/creatures/conflux/lvl3Upg2",
+		"config/creatures/conflux/lvl4Upg2",
+		"config/creatures/conflux/lvl5Upg2",
+		"config/creatures/conflux/lvl6Upg2",
+		"config/creatures/conflux/lvl7Upg2",
+		
+		"config/creatures/stackExp.json" //stack exp system
+
+		
+	],
+
+	"factions" :
+	[
+		"config/town-screen/necropolis/factions",
+		"config/town-screen/fortress/factions",
+		"config/town-screen/rampart/factions",
+		"config/town-screen/inferno/factions",
+		"config/town-screen/tower/factions",
+		"config/town-screen/conflux/factions",
+		"config/town-screen/castle/factions",
+		"config/town-screen/dungeon/factions",
+		"config/town-screen/stronghold/factions"
+	],
+	
+	"objects" :
+    [ 
+		"config/dwellings/necropolis/dwellings",
+		"config/dwellings/fortress/dwellings",
+		"config/dwellings/rampart/dwellings",
+		"config/dwellings/inferno/dwellings",
+		"config/dwellings/tower/dwellings",
+		"config/dwellings/conflux/dwellings",
+		"config/dwellings/castle/dwellings",
+		"config/dwellings/dungeon/dwellings",
+		"config/dwellings/stronghold/dwellings",
+		"config/dwellings/neutral/dwellings",
+		"config/banks/seminarium",
+		"config/banks/scriptorium",
+		"config/banks/sorceressCastle",
+		"config/banks/outpostOfSouls",
+		"config/banks/bonePillar",
+		"config/banks/phantomShip",
+		"config/decorations/fortressHomes",
+		"config/decorations/dungeonHomes",
+		"config/decorations/barrels",
+		"config/decorations/sandMountains",
+		"config/decorations/swampMountains",
+		"config/decorations/grassFlowers",
+		"config/decorations/orchardTrees"
+    ],
+	
+	"spells" :
+    [ 
+		"config/spells/rage/rage",
+		"config/spells/vampirism/vampirism",
+		"config/spells/symbiosis/symbiosis",
+		"config/spells/symbiosis/symbiosis2",
+		"config/spells/bind/bind",
+		"config/spells/divineArrows/divineArrows",
+		"config/spells/trawl/trawl",
+		"config/spells/intervention/intervention",
+		"config/spells/auraOfPower/auraOfPower",
+		"config/spells/wands/fireballWand",
+		"config/spells/wands/iceboltWand",
+		
+		"config/spells/wands/shieldWand",
+		"config/spells/summonGhost/summonGhost",
+		"config/spells/summonDemilich/summonDemilich1",
+		"config/spells/summonDemilich/summonDemilich2",
+		"config/spells/summonDemilich/summonDemilich3",
+		"config/spells/summonDemilich/summonDemilich4",
+		"config/spells/hellSpike/hellSpike",
+		"config/spells/insentience/insentience"
+    ],
+	
+	"heroes" : 
+
+     [ 
+     "config/heroes/necropolis/yaverr",
+	 "config/heroes/necropolis/zam",
+	 "config/heroes/fortress/shroo",
+	 "config/heroes/fortress/thyroc",
+	 "config/heroes/rampart/eurydis",
+	 "config/heroes/rampart/ghuri",
+	 "config/heroes/rampart/specialHeroes",
+	 "config/heroes/inferno/eyzea",
+	 "config/heroes/inferno/kreevion",
+	 "config/heroes/castle/charles",
+	 "config/heroes/castle/gwenneth",
+	 "config/heroes/dungeon/galuum",
+	 "config/heroes/dungeon/collivea",
+	 "config/heroes/dungeon/daxaroth",
+	 "config/heroes/stronghold/ergon",
+	 "config/heroes/stronghold/tartarr",	 
+	 "config/heroes/tower/verstan",
+	 "config/heroes/tower/odetta",
+	 "config/heroes/conflux/irrigus",
+	 "config/heroes/conflux/hokori"
+	 ],
+	 
+	 "artifacts" :
+	[
+		"config/artifacts/wands/fireballWand",
+		"config/artifacts/wands/iceboltWand",
+		"config/artifacts/wands/shieldWand",
+		"config/artifacts/phylacteries/minorPhylactery",
+		"config/artifacts/phylacteries/majorPhylactery",
+		"config/artifacts/phylacteries/supremePhylactery",
+		"config/artifacts/phylacteries/relicPhylactery",
+		"config/artifacts/shieldOfTheAncients/shieldOfTheAncients",
+		"config/artifacts/binoculars/binoculars",
+		"config/artifacts/thirdEye/thirdEye"
+	],
+	"skills" : 
+	[
+		"config/skills/hexes",
+		"config/skills/intimidation"
+	],
+	
+	"settings" : {
+		"combat": {
+			"badLuckDice" : [ 12, 6, 4 ]
+		}
+	}
+}

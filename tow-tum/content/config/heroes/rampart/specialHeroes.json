@@ -1,0 +1,17 @@
+{
+	"core:gelu":
+	{
+		"specialty" : {
+//			"base" : {
+//				"addInfo" : "creature.sharpshooter",
+//				"type" : "SPECIAL_UPGRADE"
+//			},
+			"bonuses" : {
+				"arbalestier2sharpshooter" : { "subtype" : "creature.tumCrossbowman" },
+				"elfSharpshooter2sharpshooter" : { "subtype" : "creature.tumSharpshooterElf" },
+				"marksman2sharpshooter" : { "subtype" : "creature.marksman" },
+				"woodElf2sharpshooter" : { "subtype" : "creature.woodElf" }
+			}
+		}
+	}	
+}	

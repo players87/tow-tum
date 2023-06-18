@@ -1,0 +1,224 @@
+{
+	"core:stronghold" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"dwellingLvl6B":   { "animation" : "town-screen/stronghold/TbStDA_5", "x" : 585, "y" : 176, "z" : -1,  "border" : "town-screen/stronghold/buildings-border/TOSSnk1.BMP", "area" : "town-screen/stronghold/buildings-area/TZSSNK1.BMP" },
+				"dwellingUpLvl6B": { "animation" : "town-screen/stronghold/TbStUA_5", "x" : 585, "y" : 143, "z" : -1,  "border" : "town-screen/stronghold/buildings-border/TOSSnk2.BMP", "area" : "town-screen/stronghold/buildings-area/TZSSNK2.BMP" },
+			
+				"horde2": { "animation" : "TBSTHRD2.def", "x" : 373, "y" : 220, "border" : "TOSGOB2H.bmp", "area" : "TZSGOB2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				"dwellingUp2Lvl1": { "animation" : "TBSTUP_0.def", "x" : 373, "y" : 220, "border" : "TOSGOB2.bmp",  "area" : "TZSGOB2.bmp" },
+				"dwellingUp2Lvl2": { "animation" : "TBSTUP_1.def", "x" : 266, "y" : 225, "z" : 1,  "border" : "TOSWOL2.bmp",  "area" : "TZSWOL2.bmp" },
+				"dwellingUp2Lvl3": { "animation" : "TBSTUP_2.def", "x" : 566, "y" : 158, "z" : 2,  "border" : "TOSORC2.bmp",  "area" : "TZSORC2.bmp" },
+				"dwellingUp2Lvl4": { "animation" : "TBSTUP_3.def", "x" : 197, "y" : 137, "border" : "TOSOGR2.bmp",  "area" : "TZSOGR2.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBSTUP_4.def", "x" : 129, "y" : 15,  "z" : -1, "border" : "TOSROC2.bmp",  "area" : "TZSROC2.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBSTUP_5.def", "x" : 616, "y" : 93,  "z" : -2, "border" : "TOSCYC2A.bmp", "area" : "TZSCYC2A.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBSTUP_6.def", "x" : 604, "y" : 0,   "border" : "TOSBEH2A.bmp", "area" : "TZSBEH2A.bmp" }		
+			},
+			"buildingsIcons": "town-screen/stronghold/HALLSTRNALT.DEF",
+			"hallBackground": "town-screen/stronghold/strongholdHallBg.png",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3" ], [ "special4" ], [ "special1" ] ],
+				[ [ "special2" ], [ "special3" ], [ "horde1", "horde1Upgr", "horde2" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl6B", "dwellingUpLvl6B" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["goblin", "hobgoblin", "tumHobgoblinOverlord"],
+				["goblinWolfRider", "hobgoblinWolfRider", "tumWolfRiderKiller"],
+				["orc", "orcChieftain", "tumOrcLeader"],
+				["ogre", "ogreMage", "tumElderOgre"],
+				["roc", "thunderbird", "tumLightningbird"],
+				["cyclop", "cyclopKing", "tumCyclopsEmperor", "mdtCouatl", "mdtQuetzalcouatl"],
+				["behemoth", "ancientBehemoth", "tumGhostBehemoth"]
+			],
+			"buildings" :
+			{
+
+				"dwellingLvl6":   { "requires" : [ "allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl6B" ] ] ] },
+				"dwellingLvl6B" :
+				{
+					"name" : "Ziggurat",
+					"description" : "The Ziggurat allows you to recruit Couatls.",
+					"cost" : 
+					{
+						"gold" : 5000,
+						"ore" : 5
+					},
+					"id" : 56, 
+					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl6" ] ] ]
+				},
+				"dwellingUpLvl6B" :
+				{
+					"name" : "Upg. Ziggurat",
+					"description" : "The Ziggurat allows you to recruit Quetzalcouatls.",
+					"cost" : 
+					{
+						"gold" : 5000,
+						"ore" : 5
+					},
+					"id" : 63, 
+					"upgrades" : "dwellingLvl6B"
+				},
+				
+				"dwellingUpLvl1":
+				{
+					"name" : "Adv. Goblin Barracks"
+				},
+				"dwellingUpLvl2":
+				{
+					"name" : "Adv. Wolf Pen"
+				},
+				"dwellingUpLvl3":
+				{
+					"name" : "Adv. Orc Tower"
+				},
+				"dwellingUpLvl4":
+				{
+					"name" : "Adv. Ogre Fort"
+				},
+				"dwellingUpLvl5":
+				{
+					"name" : "Adv. Cliff Nest"
+				},
+				"dwellingUpLvl6":
+				{
+					"name" : "Adv. Cyclops Cave"
+				},
+				"dwellingUpLvl7":
+				{
+					"name" : "Adv. Behemoth Lair"
+				},
+				"horde2" :  
+				{
+					"description" : "The Mess Hall increases Hobgoblin Overlords production by 8 per week.",
+					"name" : "{Mess Hall}",
+					"cost" :
+					{
+						"gold":	1000
+					},
+					"requires" : 
+								[
+								"allOf",
+									["dwellingUp2Lvl1"],
+									["horde1Upgr"]
+								],
+					"upgrades" : "horde1Upgr",
+					"id" : 20,
+					"mode" : "auto"
+				},
+				"dwellingUp2Lvl1":
+				{
+				
+					"description" : "The Goblin Barracks allow you to recruit Hobgoblin Overlords.",
+					"name" : "{Upg. Goblin Barracks}",			
+					
+					"cost" :
+					{
+						"wood": 5,
+						"ore":  5,
+						"gold":	1000
+					},
+					"id" : 44, 
+					"upgrades" : "dwellingUpLvl1"
+				},
+				"dwellingUp2Lvl2":
+				{
+				
+					"description" : "The Wolf Pen allows you to recruit Wolf Raider Killers.",
+					"name" : "{Upg. Wolf Pen}",			
+					
+					"cost" :
+					{
+						"wood": 5,
+						"ore":  5,
+						"gold":	1000
+					},
+					"id" : 45, 
+					"upgrades" : "dwellingUpLvl2"
+				},
+				"dwellingUp2Lvl3":
+				{
+				
+					"description" : "The Orc Tower allows you to recruit Orc Leaders.",
+					"name" : "{Upg. Orc Tower}",			
+					
+					"cost" :
+					{
+						"wood":    3,
+						"ore":     3,
+						"gold":	1000
+					},
+					"id" : 46, 
+					"upgrades" : "dwellingUpLvl3"
+				},
+				"dwellingUp2Lvl4":
+				{
+				
+					"description" : "The Ogre Fort allows you to recruit Elder Ogres.",
+					"name" : "{Upg. Ogre Fort}",			
+					
+					"cost" :
+					{
+						"wood":    5,
+						"ore":     5,
+						"gems":    5,
+						"gold":	2000
+					},
+					"id" : 47, 
+					"requires" : [ "mageGuild2" ],
+					"upgrades" : "dwellingUpLvl4"
+				},
+				"dwellingUp2Lvl5":
+				{
+					"description" : "The Cliff Nest allows you to recruit Lightnighbirds.",
+					"name" : "{Upg. Cliff Nest}",			
+					
+					"cost" :
+					{
+						"wood":    5,
+						"ore":     5,
+						"gold":	2000
+					},
+					"id" : 48, 
+					"upgrades" : "dwellingUpLvl5"
+				},
+				"dwellingUp2Lvl6":
+				{
+					"description" : "The Cyclops Cave allows you to recruit Cyclops Emperors.",
+					"name" : "{Upg. Cyclops Cave}",
+					
+					"cost" :
+					{
+						"wood":    5,
+						"ore":     5,
+						"gold":	3000
+					},
+					"id" : 49, 
+					"upgrades" : "dwellingUpLvl6"
+				},
+				"dwellingUp2Lvl7":
+				{
+				
+					"description" : "The Behemoth Lair allows you to recruit Ghost Behemoths.",
+					"name" : "{Upg. Behemoth Lair}",
+					
+					"cost" :
+					{
+						"wood":    20,
+						"ore":     20,
+						"crystal": 20,
+						"gold":	25000
+					},
+					"id" : 50, 
+					"upgrades" : "dwellingUpLvl7"
+				}
+			}
+		}
+	}
+}

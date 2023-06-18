@@ -1,0 +1,243 @@
+{
+	"core:necropolis" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"dwellingLvl4B": { "animation" : "town-screen/necropolis/wolfcave.def", "x" : 652, "y" : 206, "z" : 1, "border" : "town-screen/necropolis/buildings-border/TONalt1.bmp", "area" : "town-screen/necropolis/buildings-area/TZNalt1.bmp" }, 
+				"dwellingUpLvl4B": { "animation" : "town-screen/necropolis/wolfcavup", "x" : 652, "y" : 195, "z" : 1, "border" : "town-screen/necropolis/buildings-border/TONaup1.bmp", "area" : "town-screen/necropolis/buildings-area/TZNaup1.bmp" },
+			
+				"horde2": { "animation" : "TBNCHRD2.def", "x" : 64,  "y" : 222, "z" : 4, "border" : "TONSKE2H.bmp", "area" : "TZNSKE2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				"dwellingUp2Lvl1": { "animation" : "TBNCUP_0.def", "x" : 64,  "y" : 222, "z" : 4, "border" : "TONSKEL2.bmp", "area" : "TZNSKEL2.bmp" },
+				"dwellingUp2Lvl2": { "animation" : "TBNCUP_1.def", "x" : 498, "y" : 224, "border" : "TONZOMB2.bmp", "area" : "TZNZOMB2.bmp" },
+				"dwellingUp2Lvl3": { "animation" : "TBNCUP_2.def", "x" : 0,   "y" : 179, "z" : 2, "border" : "TONWIGH2.bmp", "area" : "TZNWIGH2.bmp" },
+				"dwellingUp2Lvl4": { "animation" : "TBNCUP_3.def", "x" : 615, "y" : 193, "z" : 2, "border" : "TONVAM2.bmp",  "area" : "TZNVAM2.bmp" },
+				"dwellingUp2Lvl5": { "animation" : "TBNCUP_4.def", "x" : 222, "y" : 171, "z" : 3, "border" : "TONLICH2.bmp", "area" : "TZNLICH2.bmp" },
+				"dwellingUp2Lvl6": { "animation" : "TBNCUP_5.def", "x" : 0,   "y" : 30,  "border" : "TONBKN2.bmp",  "area" : "TZNBKN2.bmp" },
+				"dwellingUp2Lvl7": { "animation" : "TBNCUP_6.def", "x" : 662, "y" : 23,  "border" : "TONBON2.bmp",  "area" : "TZNBON2.bmp" }				  
+			
+			},
+			"buildingsIcons": "town-screen/necropolis/ALTHALLNECR.DEF",
+			"hallBackground": "town-screen/necropolis/necropolisHallBg.BMP",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special2" ], [ "shipyard" ] ],
+				[ [ "special1" ], [ "special3" ], [ "horde1", "horde1Upgr", "horde2" ], [ "dwellingLvl4B", "dwellingUpLvl4B" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
+			],
+			"creatures" :
+			[
+				["skeleton", "skeletonWarrior", "tumSkeletonKnight"],
+				["walkingDead", "zombieLord", "tumGhoul"],
+				["wight", "wraith", "tumSpecter"],
+				["vampire", "vampireLord", "tumNosferatu", "mdtWerewolf", "mdtDireWerewolf"],
+				["lich", "powerLich", "tumLichKing"],
+				["blackKnight", "dreadKnight", "tumDeathKnight"],
+				["boneDragon", "ghostDragon", "tumBloodDragon"]
+			],
+			
+			"buildings" :
+			{
+				"dwellingLvl4":   
+				{ 
+					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "noneOf", [ "dwellingLvl4B" ] ] ]
+				},
+			
+				"dwellingLvl4B" :
+				{
+					"description" : "The Wolf Cave allows you to recruit Werewolves.",
+					"name" : "Wolf Cave",
+					"cost" : 
+					{
+						"gold" : 2000,
+						"mercury" : 5
+					},
+					"requires" : [ "allOf", ["dwellingLvl1"], [ "noneOf", [ "dwellingLvl4" ] ] ],
+					"id" : 54
+				},
+				"dwellingUpLvl4B" :
+				{
+					"description" : "The Wolf Cave allows you to recruit Dire Werewolves.",
+					"name" : "Upg. Wolf Cave",
+					"id" : 61,
+					"cost" : 
+					{
+						"mercury" : 10,
+						"gold" : 2000
+					},
+					"requires" : [ "allOf", ["dwellingLvl2"] ],
+					"upgrades" : "dwellingLvl4B"
+				},
+				"dwellingLvl6":   
+				{ 
+					"requires" : 
+					[ 
+						"allOf", 
+						[ "dwellingLvl5" ],
+						[
+							"anyOf", 
+							[ "dwellingLvl4" ],
+							[ "dwellingLvl4B" ] 
+						]
+					]
+				},
+				"dwellingUpLvl1":
+				{
+					"name" : "Adv. Cursed Temple"
+				},
+				"dwellingUpLvl2":
+				{
+					"name" : "Adv. Graveyard"
+				},
+				"dwellingUpLvl3":
+				{
+					"name" : "Adv. Tomb of Souls"
+				},
+				"dwellingUpLvl4":
+				{
+					"name" : "Adv. Estate"
+				},
+				"dwellingUpLvl5":
+				{
+					"name" : "Adv. Mausoleum"
+				},
+				"dwellingUpLvl6":
+				{
+					"name" : "Adv. Hall of Darkness"
+				},
+				"dwellingUpLvl7":
+				{
+					"name" : "Adv. Dragon Vault"
+				},
+				"dwellingUp2Lvl1":
+				{
+					"description" : "The Cursed Temple allows you to recruit Skeleton Knight.",
+					"name" : "{Upg. Cursed Temple}",
+					
+					"cost" :
+					{
+						"wood":    5,						
+						"ore":     5,
+						"gold":	1200
+					},
+					"requires" : [ "castle" ],
+					"upgrades" : "dwellingUpLvl1",
+					"id" : 44
+				},
+				"horde2":
+				{
+					"description" : "The Unearthed Graves increase Skeleton Knights production by 6 per week.",
+					"name" : "{Unearthed Graves}",
+					
+					"cost":
+					{
+						"gold":	1000
+					},
+					"requires" : [ "horde1" ],
+					"upgrades" : "dwellingUp2Lvl1",
+					"id" : 23,
+					"mode" : "auto"
+				},
+				"dwellingUp2Lvl2":
+				{
+					"description" : "The Graveyard allows you to recruit Ghouls.",
+					"name" : "{Upg. Graveyard}",
+					
+					"cost" :
+					{
+						"wood":    7,
+						"ore":     7,
+						"gold":	1300
+					},
+					"requires" : [ "dwellingUp2Lvl1" ],
+					"upgrades" : "dwellingUpLvl2",
+					"id" : 45
+				},
+				"dwellingUp2Lvl3":
+				{
+					"description" : "The Tomb of Souls allows you to recruit Specters.",
+					"name" : "{Upg. Tomb of Souls}",
+					
+					"cost" :
+					{
+						"wood":    5,
+						"mercury": 5,
+						"ore":     5,
+						"gold":	1500
+					},
+					"requires" : [ "dwellingUp2Lvl2" ],
+					"upgrades" : "dwellingUpLvl3",
+					"id" : 46
+				},
+				"dwellingUp2Lvl4":
+				{
+					"description" : "The Estate allows you to recruit Nosferatus.",
+					"name" : "{Upg. Estate}",
+					
+					"cost" :
+					{
+						"wood":    5,
+						"crystal": 12,
+						"gems":    12,
+						"gold":	1500
+					},
+					"requires" : [ "dwellingUp2Lvl3" ],
+					"upgrades" :"dwellingUpLvl4",
+					"id" : 47
+				},
+				"dwellingUp2Lvl5":
+				{
+					"description" : "The Mausoleum allows you to recruit Lich Kings.",
+					"name" : "{Upg. Mausolem}",
+					
+					"cost" :
+					{
+						"ore":     5,
+						"sulfur":  5,
+						"gold":	2000
+					},
+					"upgrades" : "dwellingUpLvl5",
+					"requires" : ["allOf",[ "mageGuild4" ], [ "dwellingUp2Lvl3" ] ],
+					"id" : 48
+				},
+				"dwellingUp2Lvl6":
+				{
+					"description" : "The Hall of Darkness allows you to recruit Death Knights.",
+					"name" : "{Upg. Hall of Darkness}",
+					
+					"cost" :
+					{
+						"ore":     5,
+						"sulfur":  5,
+						"gold":	2000
+					},
+					"upgrades" : "dwellingUpLvl6",
+					"requires" : [ "dwellingUp2Lvl5" ],
+					"id" : 49
+				},
+				"dwellingUp2Lvl7":
+				{
+					"description" : "The Dragon Vault allows you to recruit Blood Dragons.",
+					"name" : "{Upg. Dragon Vault}",
+					
+					"cost" :
+					{
+						"wood":    10,
+						"mercury": 20,
+						"ore":     10,
+						"sulfur":  10,
+						"crystal": 10,
+						"gems":    10,
+						"gold":	30000
+					},
+					"id" : 50, 
+					"requires" : [ "dwellingUp2Lvl6" ],
+					"upgrades" : "dwellingUpLvl7"
+				}				
+			}
+		}
+	}	
+}
