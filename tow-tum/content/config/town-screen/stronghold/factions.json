@@ -103,11 +103,11 @@
 						"gold":	1000
 					},
 					"requires" : 
-								[
-								"allOf",
-									["dwellingUp2Lvl1"],
-									["horde1Upgr"]
-								],
+					[
+						"allOf",
+							["dwellingUp2Lvl1"],
+							["horde1Upgr"]
+					],
 					"upgrades" : "horde1Upgr",
 					"id" : 20,
 					"mode" : "auto"
@@ -125,6 +125,10 @@
 						"gold":	1200
 					},
 					"id" : 44, 
+					"requires" : 
+					[ 
+						"capitol"
+					],	
 					"upgrades" : "dwellingUpLvl1"
 				},
 				"dwellingUp2Lvl2":
@@ -132,7 +136,6 @@
 				
 					"description" : "The Wolf Pen allows you to recruit Wolf Raider Killers.",
 					"name" : "{Upg. Wolf Pen}",			
-					
 					"cost" :
 					{
 						"wood": 15,
@@ -140,6 +143,10 @@
 						"gold":	2000
 					},
 					"id" : 45, 
+					"requires" : 
+					[ 
+						"capitol"
+					],	
 					"upgrades" : "dwellingUpLvl2"
 				},
 				"dwellingUp2Lvl3":
@@ -155,6 +162,10 @@
 						"gold":	2000
 					},
 					"id" : 46, 
+					"requires" : 
+					[ 
+						"capitol"
+					],
 					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4":
@@ -171,7 +182,12 @@
 						"gold":	4000
 					},
 					"id" : 47, 
-					"requires" : [ "mageGuild2" ],
+					"requires" : 
+					[ 
+						"allOf",
+							["mageGuild2"],
+							["dwellingUp2Lvl3"]
+					],
 					"upgrades" : "dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5":
@@ -185,6 +201,12 @@
 						"ore":  15,
 						"gold":	4500
 					},
+					"requires" : 
+					[ 
+						"allOf",
+							["capitol"], 
+							["special1"]
+					],
 					"id" : 48, 
 					"upgrades" : "dwellingUpLvl5"
 				},
@@ -200,6 +222,10 @@
 						"crystal" : 20,
 						"gold":	  7500
 					},
+					"requires" : 
+					[ 
+							"dwellingUp2Lvl5"
+					],
 					"id" : 49, 
 					"upgrades" : "dwellingUpLvl6"
 				},
@@ -216,7 +242,13 @@
 						"crystal": 30,
 						"gold":	25000
 					},
-					"id" : 50, 
+					"requires" : 
+					[
+						"anyOf", 
+							[ "dwellingUp2Lvl6" ], 
+							[ "dwellingUpLvl6B" ]
+					],
+					"id" : 50,
 					"upgrades" : "dwellingUpLvl7"
 				}
 			}

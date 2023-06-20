@@ -137,8 +137,8 @@
 					},
 					"requires" : 
 					[ 
-						"castle" 
-					],			
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl1",
 					"id" : 44
 				},
@@ -154,12 +154,9 @@
 						"gold":	2000
 					},
 					"requires" : 
-					[
-						"allOf",								
-							["castle"],
-							["dwellingUpLvl1"],
-							["dwellingUp2Lvl1"]									
-					],
+					[ 
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl2",
 					"id" : 45
 				},
@@ -174,11 +171,8 @@
 					},
 					"requires" : 
 					[ 
-						"allOf",
-							["castle"], 
-							["dwellingUpLvl1"], 
-							["dwellingUp2Lvl4"] 
-					],
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 46
 				},
@@ -196,10 +190,8 @@
 					"requires" : 
 					[
 						"allOf",
-							["castle"], 
-							["dwellingUpLvl1"], 
-							["dwellingUp2Lvl2"],
-							["dwellingUp2Lvl1"]
+							["special3"], 
+							["dwellingUp2Lvl3"]
 					],					
 					"upgrades" : "dwellingUpLvl4",
 					"id" : 47
@@ -221,10 +213,8 @@
 					"requires" : 
 					[ 
 						"allOf",
-							["castle"],
-							["mageGuild3"], 
-							["dwellingUp2Lvl3"], 
-							["dwellingUp2Lvl4"]
+							["capitol"], 
+							["mageGuild3"],
 					],	
 					"upgrades" : "dwellingUpLvl5",
 					"id" : 48
@@ -241,11 +231,7 @@
 					},
 					"requires" : 
 					[ 
-						"allOf",	
-							["castle"], 
-							["dwellingUpLvl1"], 
-							["dwellingUp2Lvl4"],
-							["dwellingUp2Lvl5"] 
+						"dwellingUp2Lvl5"
 					],
 					"upgrades" : "dwellingUpLvl6",
 					"id" : 49
@@ -265,9 +251,8 @@
 					"requires" : 
 					[ 
 						"allOf",	
-								["castle"], 
-								["dwellingUp2Lvl5"],
-								["dwellingUp2Lvl6"] 
+							["castle"],
+							["dwellingUp2Lvl6"] 
 					],
 					"upgrades"	: "dwellingUpLvl7",
 					"id" : 64

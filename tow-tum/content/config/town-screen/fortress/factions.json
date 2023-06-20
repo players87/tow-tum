@@ -116,11 +116,11 @@
 						"gold":	1000
 					},
 					"requires" : 
-								[ 
-								"allOf",
-									["horde1Upgr"], 
-									["dwellingUp2Lvl1"]
-								],
+					[ 
+						"allOf",
+							["horde1Upgr"], 
+							["dwellingUp2Lvl1"]
+					],
 					"upgrades" : "horde1Upgr",
 					"id" : 23, 
 					"mode" : "auto"
@@ -130,7 +130,10 @@
 				{ 
 					"description" : "The Gnoll Hut allows you to recruit Gnoll Shamans.",
 					"name" : "{Upg. Gnoll Hut}",
-					"requires" : [ "castle" ],
+					"requires" : 
+					[ 
+						"capitol"
+					],	
 					"cost" :
 					{
 						"wood":    20,
@@ -151,6 +154,10 @@
 						"ore":     5,
 						"gold":	2000
 					},
+					"requires" : 
+					[ 
+						"capitol"
+					],	
 					"upgrades" : "dwellingUpLvl2",
 					"id" : 45, 
 				},
@@ -166,6 +173,10 @@
 						"sulfur":  4,
 						"gold":	2000
 					},
+					"requires" : 
+					[ 
+						"capitol"
+					],	
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 46, 
 				},
@@ -180,6 +191,10 @@
 						"ore":     15,
 						"gold":	4000
 					},
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl3"
+					],
 					"upgrades" : "dwellingUpLvl4",
 					"id" : 47, 
 				},
@@ -196,6 +211,13 @@
 						"sulfur":  5,
 						"gold":	4500
 					},
+					"requires" : 
+					[
+						"allOf", 
+							[ "capitol" ], 
+							[ "mageGuild3" ],
+							[ "special1" ]
+					],
 					"upgrades" : "dwellingUpLvl5",
 					"id" : 48, 
 				},
@@ -210,6 +232,12 @@
 						"mercury": 10,
 						"gold":	7500
 					},
+					"requires" : 
+					[
+						"anyOf", 
+							[ "dwellingUp2Lvl5" ], 
+							[ "dwellingUpLvl45" ]
+					],
 					"upgrades" : "dwellingUpLvl6",
 					"id" : 49, 
 				},
@@ -224,6 +252,10 @@
 						"sulfur":  30,
 						"gold":	25000
 					},
+					"requires" : 
+					[
+						"dwellingUp2Lvl6"
+					],
 					"upgrades" : "dwellingUpLvl7",
 					"id" : 50
 				}

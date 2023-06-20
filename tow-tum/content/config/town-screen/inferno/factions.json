@@ -127,11 +127,11 @@
 					"id" : 17, 
 					"upgrades" : "horde1Upgr",
 					"requires" : 
-								[
-								"allOf",
-									["dwellingUp2Lvl1"],
-									["horde1Upgr"]
-								],
+					[
+						"allOf",
+							["dwellingUp2Lvl1"],
+							["horde1Upgr"]
+					],
 					"mode" : "auto"			
 				},
 				"dwellingUp2Lvl1" :
@@ -146,7 +146,10 @@
 						"gold":	 1300
 					},
 					"id" : 44, 
-					"requires" : ["castle"],
+					"requires" : 
+					[ 
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl1"
 				},
 				"dwellingUp2Lvl2" :
@@ -162,7 +165,10 @@
 						"gold":	    2000
 					},
 					"id" : 45, 
-					"requires" : ["dwellingUp2Lvl1"],
+					"requires" : 
+					[ 
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl2"
 				},
 				"horde3":
@@ -177,11 +183,11 @@
 					},
 					"id" : 20, 
 					"requires" : 
-								[
-								"allOf",
-									["dwellingUp2Lvl3"],
-									["horde2Upgr"]
-								],
+					[
+						"allOf",
+							["dwellingUp2Lvl3"],
+							["horde2Upgr"]
+					],
 					"upgrades" : "horde2Upgr",
 					"mode" : "auto"
 				},
@@ -198,7 +204,10 @@
 						"gold":	   3000
 					},
 					"id" : 46, 
-					"requires" : ["dwellingUp2Lvl2"],
+					"requires" : 
+					[ 
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl3",
 				},
 				"dwellingUp2Lvl4":
@@ -206,15 +215,17 @@
 				
 					"description" : "The Demon Gate allows you to recruit Sharp-Horned Demons.",
 					"name" : "{Upg. Demon Gate}",
-				
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl3"
+					],					
 					"cost" :
 					{
 						"wood":    10,
 						"ore":     10,
 						"gold":	   4000
 					},
-					"id" : 47, 
-					"requires" : ["dwellingUp2Lvl3"],
+					"id" : 47,
 					"upgrades" : "dwellingUpLvl4",
 				},
 				"dwellingUp2Lvl5":
@@ -230,7 +241,12 @@
 						"gold":	6000
 					},
 					"id" : 48, 
-//					"requires" : ["dwellingUp2Lvl4"],
+					"requires" : 
+					[
+						"anyOf", 
+							[ "dwellingUp2Lvl4" ], 
+							[ "dwellingUpLvl4B" ]
+					],
 					"upgrades" : "dwellingUpLvl5",
 				},
 				"dwellingUp2Lvl6": 
@@ -266,11 +282,13 @@
 					},
 					"id" : 50, 
 					"requires" : 
-								[
-								"allOf",
-									["dwellingUp2Lvl6"],
-									["special4"]
-								],
+					[
+						"allOf", 
+							[ "castle" ], 
+							[ "capitol" ],
+							[ "mageGuild3" ],
+							[ "special3" ]
+					],
 					"upgrades" : "dwellingUpLvl7"
 				}
 			}

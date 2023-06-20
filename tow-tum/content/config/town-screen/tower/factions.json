@@ -102,7 +102,13 @@
 				{
 					"description" : "The Workshop allows you to recruit Grandmaster Gremlins.",
 					"name" : "{Upg. Workshop}",
-					
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["capitol"]
+					],
+					"upgrades" : "dwellingUpLvl1",					
 					"cost" :
 					{
 						"wood":    5,
@@ -114,8 +120,7 @@
 				"horde2" :
 				{
 					"description" : "The Sculptor's Wings increase Marble Gorgoyle production by 4 per week.",
-					"name" : "{Sculptor's Wings}",
-					
+					"name" : "{Sculptor's Wings}",				
 					"cost" :
 					{
 						"gold":	1000
@@ -129,7 +134,12 @@
 				{
 					"description" : "The Parapet allows you to recruit Marble Gorgoyles.",
 					"name" : "{Upg. Parapet}",
-					
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["capitol"]
+					],					
 					"cost" :
 					{
 						"ore":    15,
@@ -142,7 +152,12 @@
 				{
 					"description" : "The Golem Factory allows you to recruit Steel Golems.",
 					"name" : "{Upg. Golem Factory}",
-					
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["capitol"]
+					],					
 					"cost" :
 					{
 						"wood":    10,
@@ -157,7 +172,12 @@
 				{
 					"description" : "The Mage Tower allows you to recruit Supreme Arch Magi.",
 					"name" : "{Upg. Mage Towers}",
-					
+					"requires" : 
+					[ 
+						"allOf",
+							["dwellingUp2Lvl3"], 
+							["mageGuild2"]
+					],						
 					"cost" :
 					{
 						"wood":    10,
@@ -175,7 +195,10 @@
 				{
 					"description" : "The Altar of Wishes allows you to recruit Arcane Genies.",
 					"name" : "{Upg. Altar of Wishes}",
-					
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl6"
+					],					
 					"cost" :
 					{
 						"wood":    10,
@@ -191,7 +214,14 @@
 				{
 					"description" : "The Golden Pavilion allows you to recruit Naga Empresses.",
 					"name" : "{Upg. Golden Pavilion}",
-					
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"],
+							["capitol"], 
+							["special3"], 
+							["mageGuild3"]
+					],					
 					"cost" :
 					{
 						"wood":    5,
@@ -209,7 +239,10 @@
 				{
 					"description" : "Cloud Temple allows you to recruit Lords of Thunder.",
 					"name" : "{Upg. Cloud Temple}",
-					
+					"requires" : 
+					[ 
+						"dwellingUp2Lvl6"
+					],					
 					"cost" :
 					{
 						"wood":    15,

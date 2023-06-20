@@ -8,7 +8,7 @@
 				"dwellingLvl3B": { "animation" : "town-screen/conflux/TBzTrtn.def", "x" : 700, "y" : 161, "z" : -1, "border" : "town-screen/conflux/buildings-border/ToBzT1.bmp", "area" : "town-screen/conflux/buildings-area/TBzT1.bmp" }, 
 				"dwellingUpLvl3B": { "animation" : "town-screen/conflux/TBzTrtUp.def", "x" : 700, "y" : 161, "z" : -1, "border" : "town-screen/conflux/buildings-border/ToBzT1Up.bmp", "area" : "town-screen/conflux/buildings-area/TBzT1Up.bmp" },
 
-				"hordePixie": {  "animation" : "TBELHRD2.def", "x" : 689, "y" : 250, "border" : "TOELHRD2.bmp", "area" : "TZELHRD2.bmp", "hidden" : true, "builds" : "horde1Upgr" },
+				"horde2": {  "animation" : "TBELHRD2.def", "x" : 689, "y" : 250, "border" : "TOELHRD2.bmp", "area" : "TZELHRD2.bmp", "hidden" : true, "builds" : "horde1Upgr" },
 				"dwellingUp2Lvl1": { "animation" : "TBELUP_0.def", "x" : 689, "y" : 250, "border" : "TOELUP_0.bmp", "area" : "TZELUP_0.bmp" },
 				"dwellingUp2Lvl2": { "animation" : "TBELUP_1.def", "x" : 630, "y" : 50,  "border" : "TOELUP_1.bmp", "area" : "TZELUP_1.bmp" },
 				"dwellingUp2Lvl3": { "animation" : "TBELUP_2.def", "x" : 709, "y" : 210, "z" : -1, "border" : "TOELUP_2.bmp", "area" : "TZELUP_2.bmp" },
@@ -24,7 +24,7 @@
 			[
 				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
 				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "shipyard" ] ],
-				[ [ "special2" ], [ "special1" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "special2" ], [ "special1" ], [ "horde1", "horde1Upgr", "horde2" ] ],
 				[ [ "dwellingLvl1", "dwellingUpLvl1", "dwellingUp2Lvl1" ], [ "dwellingLvl2", "dwellingUpLvl2", "dwellingUp2Lvl2" ], [ "dwellingLvl3", "dwellingUpLvl3", "dwellingUp2Lvl3" ], [ "dwellingLvl3B", "dwellingUpLvl3B" ] ],
 				[ [ "dwellingLvl4", "dwellingUpLvl4", "dwellingUp2Lvl4" ], [ "dwellingLvl5", "dwellingUpLvl5", "dwellingUp2Lvl5" ], [ "dwellingLvl6", "dwellingUpLvl6", "dwellingUp2Lvl6" ], [ "dwellingLvl7", "dwellingUpLvl7", "dwellingUp2Lvl7" ] ]
 			],
@@ -80,7 +80,7 @@
 							[ "dwellingLvl3B" ]	
 					]	
 				},
-				"hordePixie": 
+				"horde2": 
 				{ 
 					"description" : "The Garden of Life increases weekly production of Fairies by 10 per week.",
 					"name" : "{Garden of Life}",			
@@ -134,7 +134,10 @@
 						"ore":     2,
 						"gold":	1300
 					},
-					"requires" : [ "castle" ],
+					"requires" : 
+					[ 
+						"capitol"
+					],		
 					"id" : 44, 
 					"upgrades" : "dwellingUpLvl1"
 				},
@@ -152,7 +155,10 @@
 						"gold":	 3000
 					},
 					"id" : 45, 
-					"requires" : [ "dwellingUp2Lvl1" ],
+					"requires" : 
+					[ 
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl2"
 				},
 				"dwellingUp2Lvl3": 
@@ -168,7 +174,10 @@
 						"gold":	3500
 					},
 					"id" : 46, 
-					"requires" : [ "dwellingUp2Lvl2" ],
+					"requires" : 
+					[ 
+						"capitol"
+					],		
 					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4": 
@@ -184,7 +193,12 @@
 						"gold":	4000
 					},
 					"id" : 47, 
-					"requires" : [ "dwellingUp2Lvl3" ],
+					"requires" : 
+					[
+						"anyOf", 
+							[ "dwellingUp2Lvl3" ], 
+							[ "dwellingUpLvl3B" ]
+					],
 					"upgrades" : "dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5": 
@@ -218,7 +232,12 @@
 						"gold":	6000
 					},
 					"id" : 49, 
-					"requires" : [ "dwellingUp2Lvl5" ],
+					"requires" : 
+					[
+						"allOf", 
+							[ "dwellingUp2Lvl5" ],
+							[ "special2" ]
+					],
 					"upgrades" : "dwellingUpLvl6"
 				},
 				"dwellingUp2Lvl7": 
@@ -234,7 +253,12 @@
 						"gold":	25000
 					},
 					"id" : 50, 
-					"requires" : [ "dwellingUp2Lvl6" ],
+					"requires" : 
+					[
+						"allOf", 
+							[ "dwellingUp2Lvl6" ],
+							[ "mageGuild3" ]
+					],
 					"upgrades" : "dwellingUpLvl7"
 				}
 			}	
