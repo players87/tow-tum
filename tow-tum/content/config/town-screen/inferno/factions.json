@@ -141,7 +141,9 @@
 				
 					"cost" :
 					{
-						"gold":	1200
+						"wood" : 5,
+						"ore" :  5,
+						"gold":	 1300
 					},
 					"id" : 44, 
 					"requires" : ["castle"],
@@ -155,8 +157,9 @@
 					
 					"cost" :
 					{
-						"mercury": 5,
-						"gold":	1200
+						"ore" : 	5,
+						"mercury":  5,
+						"gold":	    2000
 					},
 					"id" : 45, 
 					"requires" : ["dwellingUp2Lvl1"],
@@ -190,13 +193,9 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    10,
+						"sulfur":  5,
+						"gold":	   3000
 					},
 					"id" : 46, 
 					"requires" : ["dwellingUp2Lvl2"],
@@ -210,13 +209,9 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    10,
+						"ore":     10,
+						"gold":	   4000
 					},
 					"id" : 47, 
 					"requires" : ["dwellingUp2Lvl3"],
@@ -230,13 +225,9 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"mercury": 5,
+						"sulfur":  5,
+						"gold":	6000
 					},
 					"id" : 48, 
 //					"requires" : ["dwellingUp2Lvl4"],
@@ -250,13 +241,11 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"mercury": 8,
+						"ore":     15,
+						"sulfur":  8,
+						"gems":    8,
+						"gold":	   7000
 					},
 					"id" : 49, 
 					"requires" : ["dwellingUp2Lvl5"],
@@ -270,13 +259,10 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    15,
+						"mercury": 40,
+						"ore":     15,
+						"gold":	35000
 					},
 					"id" : 50, 
 					"requires" : 

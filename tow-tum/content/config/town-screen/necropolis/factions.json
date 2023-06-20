@@ -119,9 +119,9 @@
 					
 					"cost" :
 					{
-						"wood":    5,						
-						"ore":     5,
-						"gold":	1200
+						"wood":    10,						
+						"ore":     10,
+						"gold":	1400
 					},
 					"requires" : [ "castle" ],
 					"upgrades" : "dwellingUpLvl1",
@@ -148,9 +148,9 @@
 					
 					"cost" :
 					{
-						"wood":    7,
-						"ore":     7,
-						"gold":	1300
+						"wood":    5,
+						"ore":     10,
+						"gold":	2000
 					},
 					"requires" : [ "dwellingUp2Lvl1" ],
 					"upgrades" : "dwellingUpLvl2",
@@ -166,7 +166,7 @@
 						"wood":    5,
 						"mercury": 5,
 						"ore":     5,
-						"gold":	1500
+						"gold":	3000
 					},
 					"requires" : [ "dwellingUp2Lvl2" ],
 					"upgrades" : "dwellingUpLvl3",
@@ -179,10 +179,11 @@
 					
 					"cost" :
 					{
-						"wood":    5,
-						"crystal": 12,
-						"gems":    12,
-						"gold":	1500
+						"wood":    10,
+						"ore":	   5,
+						"crystal": 10,
+						"gems":    10,
+						"gold":	4000
 					},
 					"requires" : [ "dwellingUp2Lvl3" ],
 					"upgrades" :"dwellingUpLvl4",
@@ -195,9 +196,9 @@
 					
 					"cost" :
 					{
-						"ore":     5,
-						"sulfur":  5,
-						"gold":	2000
+						"ore":     15,
+						"sulfur":  15,
+						"gold":	4000
 					},
 					"upgrades" : "dwellingUpLvl5",
 					"requires" : ["allOf",[ "mageGuild4" ], [ "dwellingUp2Lvl3" ] ],
@@ -210,9 +211,13 @@
 					
 					"cost" :
 					{
-						"ore":     5,
-						"sulfur":  5,
-						"gold":	2000
+						"wood":	   15,
+						"ore":     15,
+						"mercury": 2,
+						"sulfur":  2,
+						"crystal": 2,
+						"gems":    2,
+						"gold":	9000
 					},
 					"upgrades" : "dwellingUpLvl6",
 					"requires" : [ "dwellingUp2Lvl5" ],
@@ -226,12 +231,12 @@
 					"cost" :
 					{
 						"wood":    10,
-						"mercury": 20,
+						"mercury": 25,
 						"ore":     10,
-						"sulfur":  10,
-						"crystal": 10,
-						"gems":    10,
-						"gold":	30000
+						"sulfur":  5,
+						"crystal": 5,
+						"gems":    5,
+						"gold":	25000
 					},
 					"id" : 50, 
 					"requires" : [ "dwellingUp2Lvl6" ],

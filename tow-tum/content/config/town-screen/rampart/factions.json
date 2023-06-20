@@ -123,9 +123,8 @@
 					
 					"cost" :
 					{
-						"wood":    5,
-						"ore":     5,
-						"gold":	1000
+						"wood": 15,
+						"gold":	1500
 					},
 					"requires" : 
 							[ 
@@ -142,8 +141,8 @@
 					
 					"cost" :
 					{
-						"wood":    5,
-						"gold":	1000
+						"wood": 10,
+						"gold":	2000
 					},
 					"requires" : 
 								[ 
@@ -181,8 +180,8 @@
 					
 					"cost" :
 					{
-						"wood":    10,
-						"gold":	1500
+						"wood":    20,
+						"gold":	3000
 					},
 					"requires" : 
 								[
@@ -201,8 +200,8 @@
 					
 					"cost" :
 					{
-						"crystal": 5,
-						"gold":	2000
+						"crystal": 15,
+						"gold":	4000
 					},
 					"requires" : 
 								[
@@ -221,7 +220,7 @@
 					
 					"cost" :
 					{
-						"gold":	2000
+						"gold":	4000
 					},
 					"requires" : 
 								[
@@ -263,13 +262,10 @@
 					
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    5,
+						"ore":     5,
+						"gems":    15,
+						"gold":	7000
 					},
 					"requires" : 
 								[ 
@@ -289,10 +285,9 @@
 					
 					"cost" :
 					{
-						"ore":     30,
-						"crystal": 20,
-						"gems":    20,
-						"gold":	25000
+						"ore":     60,
+						"crystal": 40,
+						"gold":	30000
 					},
 					"requires" : 
 								[ 

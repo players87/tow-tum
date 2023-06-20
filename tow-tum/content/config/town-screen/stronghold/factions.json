@@ -120,9 +120,9 @@
 					
 					"cost" :
 					{
-						"wood": 5,
-						"ore":  5,
-						"gold":	1000
+						"wood": 10,
+						"ore":  10,
+						"gold":	1200
 					},
 					"id" : 44, 
 					"upgrades" : "dwellingUpLvl1"
@@ -135,9 +135,9 @@
 					
 					"cost" :
 					{
-						"wood": 5,
-						"ore":  5,
-						"gold":	1000
+						"wood": 15,
+						"ore":  10,
+						"gold":	2000
 					},
 					"id" : 45, 
 					"upgrades" : "dwellingUpLvl2"
@@ -150,9 +150,9 @@
 					
 					"cost" :
 					{
-						"wood":    3,
-						"ore":     3,
-						"gold":	1000
+						"wood": 7,
+						"ore":  7,
+						"gold":	2000
 					},
 					"id" : 46, 
 					"upgrades" : "dwellingUpLvl3"
@@ -165,10 +165,10 @@
 					
 					"cost" :
 					{
-						"wood":    5,
-						"ore":     5,
-						"gems":    5,
-						"gold":	2000
+						"wood": 25,
+						"ore":  5,
+						"gems": 5,
+						"gold":	4000
 					},
 					"id" : 47, 
 					"requires" : [ "mageGuild2" ],
@@ -181,9 +181,9 @@
 					
 					"cost" :
 					{
-						"wood":    5,
-						"ore":     5,
-						"gold":	2000
+						"wood": 5,
+						"ore":  15,
+						"gold":	4500
 					},
 					"id" : 48, 
 					"upgrades" : "dwellingUpLvl5"
@@ -195,9 +195,10 @@
 					
 					"cost" :
 					{
-						"wood":    5,
-						"ore":     5,
-						"gold":	3000
+						"wood": 	5,
+						"ore":  	25,
+						"crystal" : 20,
+						"gold":	  7500
 					},
 					"id" : 49, 
 					"upgrades" : "dwellingUpLvl6"
@@ -212,7 +213,7 @@
 					{
 						"wood":    20,
 						"ore":     20,
-						"crystal": 20,
+						"crystal": 30,
 						"gold":	25000
 					},
 					"id" : 50, 

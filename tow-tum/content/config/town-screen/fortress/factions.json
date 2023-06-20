@@ -133,13 +133,8 @@
 					"requires" : [ "castle" ],
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    20,
+						"gold":	1400
 					},
 					"upgrades" : "dwellingUpLvl1",
 					"id" : 44, 
@@ -153,7 +148,8 @@
 					"cost" :
 					{
 						"wood":    5,
-						"gold":	1000
+						"ore":     5,
+						"gold":	2000
 					},
 					"upgrades" : "dwellingUpLvl2",
 					"id" : 45, 
@@ -165,13 +161,10 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    5,
+						"mercury": 4,
+						"sulfur":  4,
+						"gold":	2000
 					},
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 46, 
@@ -183,13 +176,9 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    10,
+						"ore":     15,
+						"gold":	4000
 					},
 					"upgrades" : "dwellingUpLvl4",
 					"id" : 47, 
@@ -201,13 +190,11 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    15,
+						"mercury": 5,
+						"ore":     15,
+						"sulfur":  5,
+						"gold":	4500
 					},
 					"upgrades" : "dwellingUpLvl5",
 					"id" : 48, 
@@ -219,13 +206,9 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    25,
+						"mercury": 10,
+						"gold":	7500
 					},
 					"upgrades" : "dwellingUpLvl6",
 					"id" : 49, 
@@ -236,13 +219,10 @@
 					"name" : "{Upg. Hydra Pond}",	
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	300
+						"wood":    20,
+						"ore":     20,
+						"sulfur":  30,
+						"gold":	25000
 					},
 					"upgrades" : "dwellingUpLvl7",
 					"id" : 50
