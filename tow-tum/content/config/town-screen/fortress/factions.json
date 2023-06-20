@@ -236,7 +236,7 @@
 					[
 						"anyOf", 
 							[ "dwellingUp2Lvl5" ], 
-							[ "dwellingUpLvl45" ]
+							[ "dwellingUpLvl5B" ]
 					],
 					"upgrades" : "dwellingUpLvl6",
 					"id" : 49, 
