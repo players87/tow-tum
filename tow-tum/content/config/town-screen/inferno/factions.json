@@ -5,6 +5,7 @@
 		{
 			"structures" :
 			{
+				"extraCapitol":{ "animation" : "town-screen/inferno/TBIFEXT5.def", "x" : 378, "y" : 91,  "z" : -1 },
 				"horde4": { "animation" : "TBINHRD2.def", "x" : 614, "y" : 221, "border" : "TOIMP2HA.bmp", "area" : "TZIMP2HA.bmp", "hidden" : true, "builds" :  "horde1Upgr" },
 				"horde3": { "animation" : "TBINHRD4.def", "x" : 9,   "y" : 273, "border" : "TOIHND2H.bmp", "area" : "TZIHND2H.bmp", "hidden" : true, "builds" : "horde2Upgr" },		
 				"dwellingUp2Lvl1": { "animation" : "TBINUP_0.def", "x" : 614, "y" : 221, "border" : "TOIMP2A.bmp",  "area" : "TZIMP2A.bmp"  },
@@ -41,6 +42,7 @@
 			
 			"buildings" :
 			{
+				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
 				"dwellingUpLvl1":
 				{
 					"name" : "Adv. Imp Crucible"

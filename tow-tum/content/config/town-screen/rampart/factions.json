@@ -5,6 +5,7 @@
 		{
 			"structures" :
 			{
+				"extraCapitol":{ "animation" : "town-screen/rampart/TBRMEXT5.def", "x" : 436, "y" : 55,  "z" : -1 },	
 				"dwellingLvl4B": { "animation" : "town-screen/rampart/DWRMT4ALT.def", "x" : 285, "y" : 52, "z" : 1, "border" : "town-screen/rampart/buildings-border/TONalt1.bmp", "area" : "town-screen/rampart/buildings-area/TZNalt1.bmp" }, 
 				"dwellingUpLvl4B": { "animation" : "town-screen/rampart/DWRMT4UPALT", "x" : 285, "y" : 52, "z" : 1, "border" : "town-screen/rampart/buildings-border/TONaup1.bmp", "area" : "town-screen/rampart/buildings-area/TZNaup1.bmp" },
 				"grail":          { "z" : -2},
@@ -46,6 +47,7 @@
 			
 			"buildings" :
 			{
+				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
 				"dwellingLvl4":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl4B" ] ] ]

@@ -26,6 +26,7 @@
 
 			"structures" :
 			{
+				"extraCapitol":{ "animation" : "town-screen/tower/TBTWEXT5.def", "x" : 430, "y" : 28,  "z" : 0 },				
 				"horde1":         { "y" : 46 },
 				"horde1Upgr":     { "y" : 27 },
 				"horde2":    	  { "animation" : "TBTWHRD2.def", "x" : 0, "y" : 28, "border" : "TOTGAR2H.bmp", "area" : "TZTGAR2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },"dwellingLvl7B":   { "animation" : "town-screen/tower/TBDRGM1", "x" : 75, "y" : 114, "z" : -1,  "border" : "town-screen/tower/buildings-border/TBTwA7un.bmp", "area" : "town-screen/tower/buildings-area/TATwA7un.bmp" },
@@ -41,6 +42,7 @@
 
 			"buildings" :
 			{
+				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },	
 				"dwellingLvl7":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "dwellingLvl6" ], [ "noneOf", [ "dwellingLvl7B" ] ] ]
@@ -252,7 +254,7 @@
 					},
 					"id" : 50, 
 					"upgrades" : "dwellingUpLvl7"
-				}				
+				}			
 			}
 		}
 	}

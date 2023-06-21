@@ -27,6 +27,7 @@
 
 			"structures" :
 			{
+				"extraCapitol":{ "animation" : "town-screen/castle/TBCTEXT5.def", "x" : 580, "y" : 0,  "z" : -5 },
 				"citadel":          { "z" : -2 },
 				"castle":           { "z" : -2 },				
 				"shipyard":			{ "z" : -1 },
@@ -51,6 +52,7 @@
 
 			"buildings" :
 			{
+				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
 				"horde2" :  {
 					"description" : "The Griffin Bastion increases Cesar Griffin production by 3 per week.",
 					"name" : "{Griffin Bastion}",	
