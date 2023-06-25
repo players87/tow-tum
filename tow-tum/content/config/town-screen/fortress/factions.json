@@ -6,6 +6,7 @@
 		{
 			"structures" :
 			{
+				"extraCapitol":{ "animation" : "town-screen/fortress/TBFTEXT5.def", "x" : 415, "y" : 0,  "z" : -6 },					
 				"horde2": { "animation" : "TBFRHRD2.def", "x" : 641, "y" : 68,  "z" : 1,  "border" : "TOFGNL2H.bmp", "area" : "TZFGNL2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },
 				
 				"dwellingLvl3":   { "x" : 194, "y" : 86 }, // poprawic kordynaty
@@ -45,6 +46,7 @@
 			
 			"buildings" :
 			{
+				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
 				"dwellingLvl5":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl5B" ] ] ]

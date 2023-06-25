@@ -5,6 +5,9 @@
 		{
 			"structures" :
 			{
+				"extraCapitol":{ "animation" : "town-screen/stronghold/TBSTEXT5.def", "x" : 760, "y" : 0,  "z" : 3 },					
+				"dwellingLvl7": { "z" : 0 },
+				"dwellingUpLvl7": { "z" : 0 },
 				"dwellingLvl6B":   { "animation" : "town-screen/stronghold/TbStDA_5", "x" : 585, "y" : 176, "z" : -1,  "border" : "town-screen/stronghold/buildings-border/TOSSnk1.BMP", "area" : "town-screen/stronghold/buildings-area/TZSSNK1.BMP" },
 				"dwellingUpLvl6B": { "animation" : "town-screen/stronghold/TbStUA_5", "x" : 585, "y" : 143, "z" : -1,  "border" : "town-screen/stronghold/buildings-border/TOSSnk2.BMP", "area" : "town-screen/stronghold/buildings-area/TZSSNK2.BMP" },
 			
@@ -15,7 +18,7 @@
 				"dwellingUp2Lvl4": { "animation" : "TBSTUP_3.def", "x" : 197, "y" : 137, "border" : "TOSOGR2.bmp",  "area" : "TZSOGR2.bmp" },
 				"dwellingUp2Lvl5": { "animation" : "TBSTUP_4.def", "x" : 129, "y" : 15,  "z" : -1, "border" : "TOSROC2.bmp",  "area" : "TZSROC2.bmp" },
 				"dwellingUp2Lvl6": { "animation" : "TBSTUP_5.def", "x" : 616, "y" : 93,  "z" : -2, "border" : "TOSCYC2A.bmp", "area" : "TZSCYC2A.bmp" },
-				"dwellingUp2Lvl7": { "animation" : "TBSTUP_6.def", "x" : 604, "y" : 0,   "border" : "TOSBEH2A.bmp", "area" : "TZSBEH2A.bmp" }		
+				"dwellingUp2Lvl7": { "animation" : "TBSTUP_6.def", "x" : 604, "y" : 0, "z" : 0,   "border" : "TOSBEH2A.bmp", "area" : "TZSBEH2A.bmp" }		
 			},
 			"buildingsIcons": "town-screen/stronghold/HALLSTRNALT.DEF",
 			"hallBackground": "town-screen/stronghold/strongholdHallBg.png",
@@ -40,6 +43,7 @@
 			"buildings" :
 			{
 
+				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
 				"dwellingLvl6":   { "requires" : [ "allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl6B" ] ] ] },
 				"dwellingLvl6B" :
 				{
