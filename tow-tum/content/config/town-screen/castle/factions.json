@@ -216,7 +216,7 @@
 					[ 
 						"allOf",
 							["capitol"], 
-							["mageGuild3"],
+							["mageGuild3"]
 					],	
 					"upgrades" : "dwellingUpLvl5",
 					"id" : 48

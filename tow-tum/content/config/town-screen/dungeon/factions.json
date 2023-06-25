@@ -185,7 +185,7 @@
 					[ 
 						"capitol"
 					],		
-					"upgrades" : "dwellingUpLvl3",
+					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4":
 				{
@@ -201,7 +201,7 @@
 					},
 					"id" : 47, 
 					"requires" : ["dwellingUp2Lvl3"],
-					"upgrades" : "dwellingUpLvl4",
+					"upgrades" : "dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5":
 				{
@@ -222,7 +222,7 @@
 							["capitol"],
 							["mageGuild3"]
 					],
-					"upgrades" : "dwellingUpLvl5",
+					"upgrades" : "dwellingUpLvl5"
 				},
 				"dwellingUp2Lvl6": 
 				{ 

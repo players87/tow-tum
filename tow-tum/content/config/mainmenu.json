@@ -1,16 +1,10 @@
 {
-	//images used in game selection screen
 	"game-select" : ["ToW1", "ToW2"],
-
 	"loading" : ["loadScreen"],
-
-	//Main menu window, consists of several sub-menus aka items
 	"window":
 	{
 		"background" : "gamselbk",
-//		"scalable" : true, //background will be scaled to screen size
-		"video" :    {"x": 0, "y": 336, "name":"ToWmenu.bik" },//Floating WoG logo. Disabled due to different position in various versions of H3.
-		//"images" : [],//Optioal, contains any additional images in the same format as video
+		"video" :    {"x": 0, "y": 336, "name":"ToWmenu.bik" },
 		"items" : 
 		[
 			{

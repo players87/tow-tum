@@ -210,7 +210,7 @@
 					[ 
 						"capitol"
 					],		
-					"upgrades" : "dwellingUpLvl3",
+					"upgrades" : "dwellingUpLvl3"
 				},
 				"dwellingUp2Lvl4":
 				{
@@ -228,7 +228,7 @@
 						"gold":	   4000
 					},
 					"id" : 47,
-					"upgrades" : "dwellingUpLvl4",
+					"upgrades" : "dwellingUpLvl4"
 				},
 				"dwellingUp2Lvl5":
 				{
@@ -249,7 +249,7 @@
 							[ "dwellingUp2Lvl4" ], 
 							[ "dwellingUpLvl4B" ]
 					],
-					"upgrades" : "dwellingUpLvl5",
+					"upgrades" : "dwellingUpLvl5"
 				},
 				"dwellingUp2Lvl6": 
 				{ 

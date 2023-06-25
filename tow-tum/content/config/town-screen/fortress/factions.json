@@ -142,7 +142,7 @@
 						"gold":	1400
 					},
 					"upgrades" : "dwellingUpLvl1",
-					"id" : 44, 
+					"id" : 44
 				},
 				"dwellingUp2Lvl2":
 				{ 
@@ -161,7 +161,7 @@
 						"capitol"
 					],	
 					"upgrades" : "dwellingUpLvl2",
-					"id" : 45, 
+					"id" : 45
 				},
 				"dwellingUp2Lvl3": 
 				{ 
@@ -180,7 +180,7 @@
 						"capitol"
 					],	
 					"upgrades" : "dwellingUpLvl3",
-					"id" : 46, 
+					"id" : 46 
 				},
 				"dwellingUp2Lvl4": 
 				{ 
@@ -198,7 +198,7 @@
 						"dwellingUp2Lvl3"
 					],
 					"upgrades" : "dwellingUpLvl4",
-					"id" : 47, 
+					"id" : 47
 				},
 				"dwellingUp2Lvl5": 
 				{ 
@@ -221,7 +221,7 @@
 							[ "special1" ]
 					],
 					"upgrades" : "dwellingUpLvl5",
-					"id" : 48, 
+					"id" : 48
 				},
 				"dwellingUp2Lvl6": 
 				{ 
@@ -241,7 +241,7 @@
 							[ "dwellingUpLvl5B" ]
 					],
 					"upgrades" : "dwellingUpLvl6",
-					"id" : 49, 
+					"id" : 49
 				},
 				"dwellingUp2Lvl7": 
 				{ 
