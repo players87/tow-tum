@@ -26,6 +26,7 @@
 
 			"structures" :
 			{
+				"extraCapitol":{ "animation" : "town-screen/dungeon/TBDGEXT5.def", "x" : 60, "y" : 110,  "z" : 0 },
 				"dwellingLvl5B": { "animation" : "town-screen/dungeon/primevalMaw.def", "x" : 520, "y" : 140, "z" : 0, "border" : "town-screen/dungeon/buildings-border/TODMIN2.png",  "area" : "town-screen/dungeon/buildings-area/TZDMIN2.png" },
 				"dwellingUpLvl5B": { "animation" : "town-screen/dungeon/primevalMawUpg.def", "x" : 520, "y" : 140, "z" : 0, "border" : "town-screen/dungeon/buildings-border/TODMIN2.png",  "area" : "town-screen/dungeon/buildings-area/TZDMIN2.png" },
 				"horde2": { "animation" : "TBDNHRD2.def", "x" : 0, "y" : 300, "z" : 2, "border" : "TODTR2HA.bmp", "area" : "TZDTR2HA.bmp", "hidden" : true, "builds" : "horde1Upgr" },
@@ -43,6 +44,7 @@
 
 			"buildings" :
 			{
+				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
 				"dwellingLvl5":   { "requires" : ["allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl5B" ] ] ] },
 				"dwellingLvl5B" :
 				{
