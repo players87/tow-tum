@@ -46,7 +46,18 @@
 			
 			"buildings" :
 			{
-				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
+				"extraCapitol":   {
+					"name" : "Marsh",
+					"description" : "Marsh mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
 				"dwellingLvl5":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl5B" ] ] ]
@@ -134,7 +145,9 @@
 					"name" : "{Upg. Gnoll Hut}",
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],	
 					"cost" :
 					{
@@ -158,7 +171,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],	
 					"upgrades" : "dwellingUpLvl2",
 					"id" : 45
@@ -177,8 +192,10 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
-					],	
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 46 
 				},
@@ -216,7 +233,6 @@
 					"requires" : 
 					[
 						"allOf", 
-							[ "capitol" ], 
 							[ "mageGuild3" ],
 							[ "special1" ]
 					],
@@ -236,9 +252,10 @@
 					},
 					"requires" : 
 					[
-						"anyOf", 
-							[ "dwellingUp2Lvl5" ], 
-							[ "dwellingUpLvl5B" ]
+						"allOf", ["castle"],
+						[
+							"anyOf", [ "dwellingUp2Lvl5" ], [ "dwellingUpLvl5B" ]
+						]
 					],
 					"upgrades" : "dwellingUpLvl6",
 					"id" : 49

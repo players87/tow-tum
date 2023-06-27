@@ -44,7 +44,18 @@
 
 			"buildings" :
 			{
-				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
+				"extraCapitol":   {
+					"name" : "Dracos",
+					"description" : "Dracos mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
 				"dwellingLvl5":   { "requires" : ["allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl5B" ] ] ] },
 				"dwellingLvl5B" :
 				{
@@ -141,7 +152,9 @@
 					"id" : 44, 
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl1"
 				},
@@ -160,7 +173,9 @@
 					"id" : 45, 
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl2"
 				},
@@ -183,7 +198,9 @@
 					"id" : 46, 
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl3"
 				},
@@ -218,9 +235,7 @@
 					"id" : 48, 
 					"requires" : 
 					[
-						"allOf",
-							["capitol"],
-							["mageGuild3"]
+						"mageGuild3"
 					],
 					"upgrades" : "dwellingUpLvl5"
 				},

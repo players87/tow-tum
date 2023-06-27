@@ -42,7 +42,18 @@
 
 			"buildings" :
 			{
-				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },	
+				"extraCapitol":   {
+					"name" : "Geomancy",
+					"description" : "Geomancy mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
 				"dwellingLvl7":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "dwellingLvl6" ], [ "noneOf", [ "dwellingLvl7B" ] ] ]
@@ -108,7 +119,7 @@
 					[ 
 						"allOf",
 							["castle"], 
-							["capitol"]
+							["dwellingUpLvl6"]
 					],
 					"upgrades" : "dwellingUpLvl1",					
 					"cost" :
@@ -140,7 +151,7 @@
 					[ 
 						"allOf",
 							["castle"], 
-							["capitol"]
+							["dwellingUpLvl6"]
 					],					
 					"cost" :
 					{
@@ -158,8 +169,8 @@
 					[ 
 						"allOf",
 							["castle"], 
-							["capitol"]
-					],					
+							["dwellingUpLvl6"]
+					],				
 					"cost" :
 					{
 						"wood":    10,
@@ -220,7 +231,6 @@
 					[ 
 						"allOf",
 							["castle"],
-							["capitol"], 
 							["special3"], 
 							["mageGuild3"]
 					],					

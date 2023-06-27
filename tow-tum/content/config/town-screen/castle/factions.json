@@ -36,7 +36,6 @@
 				"horde1Upgr":		{ "z" : -2 },
 				"horde2":		 	{ "animation" : "TBCSHRD2.def", "x" : 76,  "y" : 35,  "z" : -1, "border" : "TOCSGR2H.bmp", "area" : "TZCSGR2H.bmp", "hidden" : true, "builds" : "horde1Upgr" },
 				"dwellingLvl3":		{ "z" : -2 },
-//				"dwellingLvl1":		{ "animation" : "TBCSDW_0.def", "x" : 304, "y" : 92,  "border" : "TOCSPIK1.bmp", "area" : "TZCSPIK1.bmp" },
 				"dwellingUpLvl3":	{ "z" : -2 },
 				"dwellingUpLvl1":	{ "z" : -2 },
 				"dwellingUp2Lvl1": 	{ "animation" : "TBCSUP_0.def", "x" : 304, "y" : 65,  "border" : "TOCSPIK2.bmp", "area" : "TZCSPIK2.bmp" },
@@ -52,7 +51,18 @@
 
 			"buildings" :
 			{
-				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
+				"extraCapitol":   {
+					"name" : "Faith",
+					"description" : "Faith mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
 				"horde2" :  {
 					"description" : "The Griffin Bastion increases Cesar Griffin production by 3 per week.",
 					"name" : "{Griffin Bastion}",	
@@ -139,7 +149,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl1",
 					"id" : 44
@@ -157,7 +169,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl2",
 					"id" : 45
@@ -173,8 +187,10 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
-					],		
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],	
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 46
 				},
@@ -215,9 +231,11 @@
 					"requires" : 
 					[ 
 						"allOf",
-							["capitol"], 
+							["castle"], 
+							["dwellingUpLvl6"],
 							["mageGuild3"]
-					],	
+							
+					],
 					"upgrades" : "dwellingUpLvl5",
 					"id" : 48
 				},

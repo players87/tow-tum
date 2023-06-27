@@ -43,7 +43,19 @@
 			"buildings" :
 			{
 
-				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
+				"extraCapitol":   {
+					"name" : "Tribe",
+					"description" : "Tribe mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[
+						"allOf", ["castle"],
+						[
+							"anyOf", [ "dwellingUpLvl6" ], [ "dwellingUpLvl6B" ]
+						]
+					],
+					"mode" : "auto" 
+				},
 				"dwellingLvl6":   { "requires" : [ "allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl6B" ] ] ] },
 				"dwellingLvl6B" :
 				{
@@ -130,9 +142,12 @@
 					},
 					"id" : 44, 
 					"requires" : 
-					[ 
-						"capitol"
-					],	
+					[
+						"allOf", ["castle"],
+						[
+							"anyOf", [ "dwellingUpLvl6" ], [ "dwellingUpLvl6B" ]
+						]
+					],
 					"upgrades" : "dwellingUpLvl1"
 				},
 				"dwellingUp2Lvl2":
@@ -148,9 +163,12 @@
 					},
 					"id" : 45, 
 					"requires" : 
-					[ 
-						"capitol"
-					],	
+					[
+						"allOf", ["castle"],
+						[
+							"anyOf", [ "dwellingUpLvl6" ], [ "dwellingUpLvl6B" ]
+						]
+					],
 					"upgrades" : "dwellingUpLvl2"
 				},
 				"dwellingUp2Lvl3":
@@ -167,8 +185,11 @@
 					},
 					"id" : 46, 
 					"requires" : 
-					[ 
-						"capitol"
+					[
+						"allOf", ["castle"],
+						[
+							"anyOf", [ "dwellingUpLvl6" ], [ "dwellingUpLvl6B" ]
+						]
 					],
 					"upgrades" : "dwellingUpLvl3"
 				},
@@ -207,9 +228,7 @@
 					},
 					"requires" : 
 					[ 
-						"allOf",
-							["capitol"], 
-							["special1"]
+						"special1"
 					],
 					"id" : 48, 
 					"upgrades" : "dwellingUpLvl5"

@@ -43,6 +43,18 @@
 			
 			"buildings" :
 			{
+				"extraCapitol":   {
+					"name" : "Nature",
+					"description" : "Nature mark unlocks 3rd level structures to build.",
+//					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+//					"mode" : "auto" 
+				},
 				"dwellingLvl3":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl3B" ] ] ]
@@ -138,7 +150,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"id" : 44, 
 					"upgrades" : "dwellingUpLvl1"
@@ -159,7 +173,9 @@
 					"id" : 45, 
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl2"
 				},
@@ -178,7 +194,9 @@
 					"id" : 46, 
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl3"
 				},

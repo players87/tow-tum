@@ -42,6 +42,18 @@
 			
 			"buildings" :
 			{			
+				"extraCapitol":   {
+					"name" : "Tombstone",
+					"description" : "Tombstone mark unlocks 3rd level structures to build.",
+//					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+//					"mode" : "auto" 
+				},
 				"dwellingLvl4":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "noneOf", [ "dwellingLvl4B" ] ] ]
@@ -126,8 +138,10 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
-					],	
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
 					"upgrades" : "dwellingUpLvl1",
 					"id" : 44
 				},
@@ -163,7 +177,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],	
 					"upgrades" : "dwellingUpLvl2",
 					"id" : 45
@@ -182,8 +198,10 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
-					],	
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],		
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 46
 				},
@@ -202,8 +220,7 @@
 					},
 					"requires" : 
 					[
-						"allOf", 
-							[ "dwellingUp2Lvl7" ]
+						"dwellingUp2Lvl7"
 					],
 					"upgrades" :"dwellingUpLvl4",
 					"id" : 47
@@ -264,9 +281,7 @@
 					"id" : 50, 
 					"requires" : 
 					[
-						"allOf", 
-							[ "capitol" ], 
-							[ "special3" ]
+						"special3"
 					],
 					"upgrades" : "dwellingUpLvl7"
 				}				

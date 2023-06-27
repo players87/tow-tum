@@ -47,7 +47,18 @@
 			
 			"buildings" :
 			{
-				"extraCapitol":   { "id" : 29, "requires" : [ "capitol" ], "mode" : "auto" },
+				"extraCapitol":   {
+					"name" : "Wild",
+					"description" : "Wild mark unlocks 3rd level structures to build.",
+					"id" : 29, 
+					"requires" : 
+					[ 
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
+					],
+					"mode" : "auto" 
+				},
 				"dwellingLvl4":   
 				{ 
 					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl4B" ] ] ]
@@ -130,7 +141,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],	
 					"upgrades" : "dwellingUpLvl1",
 					"id" : 44
@@ -147,7 +160,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],			
 					"upgrades" : "dwellingUpLvl2",
 					"id" : 45
@@ -182,7 +197,9 @@
 					},
 					"requires" : 
 					[ 
-						"capitol"
+						"allOf",
+							["castle"], 
+							["dwellingUpLvl6"]
 					],		
 					"upgrades" : "dwellingUpLvl3",
 					"id" : 46
@@ -257,10 +274,10 @@
 					"requires" : 
 					[ 
 						"allOf",
-						    ["capitol"],
-						    ["special2"] 
+							["castle"], 
+							["dwellingUpLvl6"],
+							["special2"]
 					],
-								
 					"upgrades" : "dwellingUpLvl6",
 					"id" : 49
 				},
