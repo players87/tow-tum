@@ -2,10 +2,10 @@
 	"mdtPaladin" : {
 		"advMapAmount" : {"max" : 8, "min" : 3},
 		"aiValue" : 6925,
-		"attack" : 20,
-		"cost" : { "gold" : 3000, "ore" : 2 },
-		"damage" : {"max" : 45, "min" : 25},
-		"defense" : 25,
+		"attack" : 40,
+		"cost" : { "gold" : 30000, "ore" : 10 },
+		"damage" : {"max" : 65, "min" : 45},
+		"defense" : 45,
 		"faction" : "castle",
 		"fightValue" : 5454,
 		"graphics" : {
@@ -17,8 +17,8 @@
 			"timeBetweenFidgets" : 1
 		},
 		"growth" : 2,
-		"hitPoints" : 225,
-		"speed" : 7,
+		"hitPoints" : 1500,
+		"speed" : 12,
         "doubleWide" : false,
 		"level" : 7,
 		"name" : { "plural" : "Paladins", "singular" : "Paladin" },
