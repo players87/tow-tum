@@ -144,8 +144,8 @@
 					"name" : "{High Guardhouse}",	
 					"cost" :
 					{
-						"ore" :  15,
-						"gold" : 1500
+						"ore" :  5,
+						"gold" : 500
 					},
 					"requires" : 
 					[ 
@@ -163,9 +163,9 @@
 				
 					"cost" :
 					{
-						"wood":    10,
-						"ore":     10,
-						"gold":	2000
+						"wood":    5,
+						"ore":     5,
+						"gold":	1000
 					},
 					"requires" : 
 					[ 
@@ -182,8 +182,8 @@
 					"name" : "{Upg. Griffin Tower}",
 					"cost" :
 					{
-						"ore":     10,
-						"gold":	2000
+						"ore":     5,
+						"gold":	1000
 					},
 					"requires" : 
 					[ 
@@ -201,9 +201,9 @@
 				
 					"cost" :
 					{
-						"ore":     10,
-						"crystal": 5,
-						"gold":	4000
+						"ore":     5,
+						"crystal": 1,
+						"gold":	2000
 					},
 					"requires" : 
 					[
@@ -220,13 +220,13 @@
 					"name" : "{Upg. Monastery}",
 					"cost" :
 					{
-						"wood":    7,
-						"mercury": 4,
-						"ore":     7,
-						"sulfur":  4,
-						"crystal": 4,
-						"gems":    4,
-						"gold":	4000
+						"wood":    3,
+						"mercury": 2,
+						"ore":     3,
+						"sulfur":  2,
+						"crystal": 2,
+						"gems":    2,
+						"gold":	2000
 					},
 					"requires" : 
 					[ 
@@ -246,8 +246,8 @@
 					"name" : "{Upg. Training Grounds}",
 					"cost" :
 					{
-						"wood": 30,
-						"gold":	8000
+						"wood": 10,
+						"gold":	4000
 					},
 					"requires" : 
 					[ 
@@ -262,11 +262,11 @@
 					"name" : "{Upg. Portal of Glory}",
 					"cost" :
 					{
-						"mercury": 20,
-						"sulfur":  20,
-						"crystal": 20,
-						"gems":    20,
-						"gold":	40000
+						"mercury": 10,
+						"sulfur":  10,
+						"crystal": 10,
+						"gems":    10,
+						"gold":	20000
 					},
 					"requires" : 
 					[ 
