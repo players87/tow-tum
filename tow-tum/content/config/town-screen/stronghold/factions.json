@@ -56,7 +56,7 @@
 					],
 					"mode" : "auto" 
 				},
-				"dwellingLvl6":   { "requires" : [ "allOf", [ "dwellingLvl4" ], [ "noneOf", [ "dwellingLvl6B" ] ] ] },
+				"dwellingLvl6":   { "requires" : [ "allOf", [ "dwellingLvl4"  ] ] },
 				"dwellingLvl6B" :
 				{
 					"name" : "Ziggurat",
@@ -67,7 +67,7 @@
 						"ore" : 5
 					},
 					"id" : 56, 
-					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl6" ] ] ]
+					"requires" : [ "allOf", [ "dwellingLvl4" ], [ "mageGuild1"  ] ]
 				},
 				"dwellingUpLvl6B" :
 				{
@@ -136,9 +136,9 @@
 					
 					"cost" :
 					{
-						"wood": 10,
-						"ore":  10,
-						"gold":	1200
+						"wood": 5,
+						"ore":  5,
+						"gold":	600
 					},
 					"id" : 44, 
 					"requires" : 
@@ -157,9 +157,9 @@
 					"name" : "{Upg. Wolf Pen}",			
 					"cost" :
 					{
-						"wood": 15,
-						"ore":  10,
-						"gold":	2000
+						"wood": 7,
+						"ore":  5,
+						"gold":	1000
 					},
 					"id" : 45, 
 					"requires" : 
@@ -179,9 +179,9 @@
 					
 					"cost" :
 					{
-						"wood": 7,
-						"ore":  7,
-						"gold":	2000
+						"wood": 3,
+						"ore":  3,
+						"gold":	1000
 					},
 					"id" : 46, 
 					"requires" : 
@@ -201,10 +201,10 @@
 					
 					"cost" :
 					{
-						"wood": 25,
-						"ore":  5,
-						"gems": 5,
-						"gold":	4000
+						"wood": 12,
+						"ore":  2,
+						"gems": 2,
+						"gold":	2000
 					},
 					"id" : 47, 
 					"requires" : 
@@ -222,9 +222,9 @@
 					
 					"cost" :
 					{
-						"wood": 5,
-						"ore":  15,
-						"gold":	4500
+						"wood": 2,
+						"ore":  7,
+						"gold":	2200
 					},
 					"requires" : 
 					[ 
@@ -240,10 +240,10 @@
 					
 					"cost" :
 					{
-						"wood": 	5,
-						"ore":  	25,
-						"crystal" : 20,
-						"gold":	  7500
+						"wood": 	2,
+						"ore":  	12,
+						"crystal" : 10,
+						"gold":	  3500
 					},
 					"requires" : 
 					[ 
@@ -260,10 +260,10 @@
 					
 					"cost" :
 					{
-						"wood":    20,
-						"ore":     20,
-						"crystal": 30,
-						"gold":	25000
+						"wood":    5,
+						"ore":     5,
+						"crystal": 7,
+						"gold":	8000
 					},
 					"requires" : 
 					[
