@@ -267,10 +267,10 @@
 				
 					"cost" :
 					{
-						"wood":    10,
-						"mercury": 10,
-						"ore":     10,
-						"gold":	15000
+						"wood":    5,
+						"mercury": 5,
+						"ore":     5,
+						"gold":	7500
 					},
 					"id" : 50, 
 					"requires" : 
