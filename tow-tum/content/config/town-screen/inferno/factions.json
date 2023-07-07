@@ -84,7 +84,7 @@
 				},
 				"dwellingLvl4":   
 				{ 
-					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "noneOf", [ "dwellingLvl4B" ] ] ]
+					"requires" : [ "allOf", [ "dwellingLvl2"  ] ]
 				},
 			
 				"dwellingLvl4B" :
@@ -96,7 +96,7 @@
 						"gold" : 2000,
 						"sulfur" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "special2" ], [ "noneOf", [ "dwellingLvl4" ] ] ],
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "special2"  ] ],
 					"id" : 54
 				},
 				"dwellingUpLvl4B" :
@@ -109,7 +109,7 @@
 						"sulfur" : 5,
 						"gold" : 1500
 					},
-					"requires" : ["allOf", ["dwellingLvl2"], [ "noneOf", [ "dwellingLvl4" ] ] ],
+					"requires" : ["allOf", ["dwellingLvl2"  ] ],
 					"upgrades" : "dwellingLvl4B"
 				},
 				"dwellingLvl5" :   
@@ -154,9 +154,9 @@
 				
 					"cost" :
 					{
-						"wood" : 5,
-						"ore" :  5,
-						"gold":	 1300
+						"wood" : 2,
+						"ore" :  2,
+						"gold":	 600
 					},
 					"id" : 44, 
 					"requires" : 
@@ -175,9 +175,9 @@
 					
 					"cost" :
 					{
-						"ore" : 	5,
-						"mercury":  5,
-						"gold":	    2000
+						"ore" : 	2,
+						"mercury":  2,
+						"gold":	    1000
 					},
 					"id" : 45, 
 					"requires" : 
@@ -216,9 +216,9 @@
 				
 					"cost" :
 					{
-						"wood":    10,
-						"sulfur":  5,
-						"gold":	   3000
+						"wood":    5,
+						"sulfur":  2,
+						"gold":	   1500
 					},
 					"id" : 46, 
 					"requires" : 
@@ -240,9 +240,9 @@
 					],					
 					"cost" :
 					{
-						"wood":    10,
-						"ore":     10,
-						"gold":	   4000
+						"wood":    5,
+						"ore":     5,
+						"gold":	   2000
 					},
 					"id" : 47,
 					"upgrades" : "dwellingUpLvl4"
@@ -255,9 +255,9 @@
 				
 					"cost" :
 					{
-						"mercury": 5,
-						"sulfur":  5,
-						"gold":	6000
+						"mercury": 2,
+						"sulfur":  2,
+						"gold":	3000
 					},
 					"id" : 48, 
 					"requires" : 
@@ -276,11 +276,11 @@
 				
 					"cost" :
 					{
-						"mercury": 8,
-						"ore":     15,
-						"sulfur":  8,
-						"gems":    8,
-						"gold":	   7000
+						"mercury": 4,
+						"ore":     7,
+						"sulfur":  4,
+						"gems":    4,
+						"gold":	   3500
 					},
 					"id" : 49, 
 					"requires" : ["dwellingUp2Lvl5"],
@@ -294,10 +294,10 @@
 				
 					"cost" :
 					{
-						"wood":    15,
-						"mercury": 40,
-						"ore":     15,
-						"gold":	35000
+						"wood":    4,
+						"mercury": 10,
+						"ore":     4,
+						"gold":	8000
 					},
 					"id" : 50, 
 					"requires" : 
