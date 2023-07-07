@@ -57,7 +57,7 @@
 				},
 				"dwellingLvl3":   
 				{ 
-					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl3B" ] ] ]
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1"  ] ]
 				},
 			
 				"dwellingLvl3B" :
@@ -70,7 +70,7 @@
 						"wood" : 5,
 						"ore" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1" ], [ "noneOf", [ "dwellingLvl3" ] ] ],
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "mageGuild1"  ] ],
 					"id" : 53
 				},
 				"dwellingUpLvl3B" :
@@ -144,9 +144,9 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"ore":     2,
-						"gold":	1300
+						"wood":    1,
+						"ore":     1,
+						"gold":	6500
 					},
 					"requires" : 
 					[ 
@@ -164,11 +164,11 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     5,
-						"gems":    2,
-						"gold":	 3000
+						"wood":    1,
+						"mercury": 1,
+						"ore":     1,
+						"gems":    1,
+						"gold":	 1500
 					},
 					"id" : 45, 
 					"requires" : 
@@ -187,9 +187,9 @@
 					"cost" :
 					{
 
-						"mercury": 5,
-						"ore":     10,
-						"gold":	3500
+						"mercury": 1,
+						"ore":     2,
+						"gold":	1500
 					},
 					"id" : 46, 
 					"requires" : 
@@ -207,10 +207,10 @@
 				
 					"cost" :
 					{
-						"wood":    5,
-						"mercury": 5,
-						"ore":     10,
-						"gold":	4000
+						"wood":    2,
+						"mercury": 2,
+						"ore":     2,
+						"gold":	2000
 					},
 					"id" : 47, 
 					"requires" : 
@@ -228,9 +228,9 @@
 				
 					"cost" :
 					{
-						"ore":     10,
-						"sulfur":  5,
-						"gold":	3000
+						"ore":     2,
+						"sulfur":  2,
+						"gold":	1500
 					},
 					"id" : 48, 
 					"requires" : [ "dwellingUp2Lvl4" ],
@@ -243,13 +243,13 @@
 				
 					"cost" :
 					{
-						"wood":    5,
-						"mercury": 5,
-						"ore":     5,
-						"sulfur":  5,
-						"crystal": 5,
-						"gems":    5,
-						"gold":	6000
+						"wood":    2,
+						"mercury": 2,
+						"ore":     2,
+						"sulfur":  2,
+						"crystal": 2,
+						"gems":    2,
+						"gold":	3000
 					},
 					"id" : 49, 
 					"requires" : 
@@ -267,10 +267,10 @@
 				
 					"cost" :
 					{
-						"wood":    20,
-						"mercury": 20,
-						"ore":     20,
-						"gold":	25000
+						"wood":    10,
+						"mercury": 10,
+						"ore":     10,
+						"gold":	15000
 					},
 					"id" : 50, 
 					"requires" : 
