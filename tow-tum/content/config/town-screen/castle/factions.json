@@ -106,7 +106,7 @@
 				},
 				"dwellingLvl7":   
 				{ 
-					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "dwellingLvl6" ], ] ]
+					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "dwellingLvl6"  ] ]
 				},
 				"dwellingUpLvl7" :
 				{
@@ -123,7 +123,7 @@
 						"gold" : 5000
 					},
 					"id" : 50, 
-					"requires" : [ "allOf", [ "dwellingLvl5" ], ] ]
+					"requires" : [ "allOf", [ "dwellingLvl5"  ] ]
 				},
 				"dwellingUpLvl7B" :
 				{
