@@ -61,7 +61,7 @@
 				},
 				"dwellingLvl4":   
 				{ 
-					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl4B" ] ] ]
+					"requires" : [ "allOf", [ "dwellingLvl3"  ] ]
 				},
 				"dwellingLvl4B" :
 				{
@@ -73,7 +73,7 @@
 						"wood" : 10,
 						"crystal" : 5
 					},
-					"requires" : [ "allOf", ["dwellingLvl2"], [ "noneOf", [ "dwellingLvl4" ] ] ],
+					"requires" : [ "allOf", ["dwellingLvl2"  ] ],
 					"id" : 54
 				},
 				"dwellingUpLvl4B" :
@@ -155,8 +155,8 @@
 					
 					"cost" :
 					{
-						"wood": 10,
-						"gold":	2000
+						"wood": 5,
+						"gold":	1000
 					},
 					"requires" : 
 					[ 
@@ -192,8 +192,8 @@
 					
 					"cost" :
 					{
-						"wood":    20,
-						"gold":	3000
+						"wood":    10,
+						"gold":	1500
 					},
 					"requires" : 
 					[ 
@@ -211,8 +211,8 @@
 					
 					"cost" :
 					{
-						"crystal": 15,
-						"gold":	4000
+						"crystal": 7,
+						"gold":	2000
 					},
 					"requires" : 
 					[
@@ -228,7 +228,7 @@
 					
 					"cost" :
 					{
-						"gold":	4000
+						"gold":	2000
 					},
 					"requires" : 
 					[
@@ -246,7 +246,7 @@
 					"description" : "The Dendroid Saplings increase Elder Dendroids production by 2 per week.",
 					"cost" : 
 					{
-						"gold" : 2000
+						"gold" : 1000
 					},
 					"id" : 23,
 					"requires" : 
@@ -266,10 +266,10 @@
 					
 					"cost" :
 					{
-						"wood":    5,
-						"ore":     5,
-						"gems":    15,
-						"gold":	7000
+						"wood":    2,
+						"ore":     2,
+						"gems":    7,
+						"gold":	3500
 					},
 					"requires" : 
 					[ 
@@ -288,9 +288,9 @@
 					
 					"cost" :
 					{
-						"ore":     60,
-						"crystal": 40,
-						"gold":	30000
+						"ore":     15,
+						"crystal": 10,
+						"gold":	8000
 					},
 					"requires" : 
 					[ 
