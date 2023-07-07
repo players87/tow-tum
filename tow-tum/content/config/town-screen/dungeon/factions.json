@@ -146,8 +146,8 @@
 				
 					"cost" :
 					{
-						"wood":    15,
-						"gold":	1400
+						"wood":    7,
+						"gold":	700
 					},
 					"id" : 44, 
 					"requires" : 
@@ -166,9 +166,9 @@
 					
 					"cost" :
 					{
-						"sulfur":  2,
-						"crystal": 2,
-						"gold":	2000
+						"sulfur":  1,
+						"crystal": 1,
+						"gold":	1000
 					},
 					"id" : 45, 
 					"requires" : 
@@ -187,13 +187,13 @@
 				
 					"cost" :
 					{
-						"wood":    2,
-						"mercury": 2,
-						"ore":     2,
-						"sulfur":  2,
-						"crystal": 2,
-						"gems":    2,
-						"gold":	2000
+						"wood":    1,
+						"mercury": 1,
+						"ore":     1,
+						"sulfur":  1,
+						"crystal": 1,
+						"gems":    1,
+						"gold":	1000
 					},
 					"id" : 46, 
 					"requires" : 
@@ -212,9 +212,9 @@
 				
 					"cost" :
 					{
-						"wood":    10,
-						"ore":     10,
-						"gold":	 3500
+						"wood":    5,
+						"ore":     5,
+						"gold":	 1700
 					},
 					"id" : 47, 
 					"requires" : ["dwellingUp2Lvl3"],
@@ -228,9 +228,9 @@
 				
 					"cost" :
 					{
-						"ore":     15,
-						"gems":    15,
-						"gold":	7000
+						"ore":     7,
+						"gems":    7,
+						"gold":	3500
 					},
 					"id" : 48, 
 					"requires" : 
@@ -247,11 +247,11 @@
 				
 					"cost" :
 					{
-						"wood":    10,
-						"mercury": 10,
-						"ore":     10,
-						"sulfur":  10,
-						"gold":	6000
+						"wood":    5,
+						"mercury": 5,
+						"ore":     5,
+						"sulfur":  5,
+						"gold":	3000
 					},
 					"id" : 49, 
 
@@ -271,10 +271,10 @@
 				
 					"cost" :
 					{
-						"wood":    30,
-						"ore":     30,
-						"sulfur":  40,
-						"gold":	30000
+						"wood":    7,
+						"ore":     7,
+						"sulfur":  10,
+						"gold":	7000
 					},
 					"id" : 50, 
 					"requires" : 
