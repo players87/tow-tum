@@ -262,11 +262,11 @@
 					"name" : "{Upg. Portal of Glory}",
 					"cost" :
 					{
-						"mercury": 10,
-						"sulfur":  10,
-						"crystal": 10,
-						"gems":    10,
-						"gold":	20000
+						"mercury": 5,
+						"sulfur":  5,
+						"crystal": 5,
+						"gems":    5,
+						"gold":	10000
 					},
 					"requires" : 
 					[ 
