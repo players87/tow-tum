@@ -60,7 +60,7 @@
 				},
 				"dwellingLvl5":   
 				{ 
-					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl5B" ] ] ]
+					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "dwellingLvl3"  ] ]
 				},
 			
 				"dwellingLvl5B" :
@@ -73,7 +73,7 @@
 						"wood" : 5,
 						"sulfur" : 5
 					},
-					"requires" : [ "allOf",["mageGuild1"], ["dwellingLvl2"], ["dwellingLvl3"], [ "noneOf",[ "dwellingLvl5" ] ] ],
+					"requires" : [ "allOf",["mageGuild1"], ["dwellingLvl2"], ["dwellingLvl3"  ] ],
 					"id" : 55
 				},
 				"dwellingUpLvl5B" :
@@ -151,8 +151,8 @@
 					],	
 					"cost" :
 					{
-						"wood":    20,
-						"gold":	1400
+						"wood":    10,
+						"gold":	700
 					},
 					"upgrades" : "dwellingUpLvl1",
 					"id" : 44
@@ -165,9 +165,9 @@
 				
 					"cost" :
 					{
-						"wood":    5,
-						"ore":     5,
-						"gold":	2000
+						"wood":    2,
+						"ore":     2,
+						"gold":	1000
 					},
 					"requires" : 
 					[ 
@@ -185,10 +185,10 @@
 				
 					"cost" :
 					{
-						"wood":    5,
-						"mercury": 4,
-						"sulfur":  4,
-						"gold":	2000
+						"wood":    1,
+						"mercury": 2,
+						"sulfur":  2,
+						"gold":	1000
 					},
 					"requires" : 
 					[ 
@@ -206,9 +206,9 @@
 				
 					"cost" :
 					{
-						"wood":    10,
-						"ore":     15,
-						"gold":	4000
+						"wood":    5,
+						"ore":     7,
+						"gold":	2000
 					},
 					"requires" : 
 					[ 
@@ -224,11 +224,11 @@
 				
 					"cost" :
 					{
-						"wood":    15,
-						"mercury": 5,
-						"ore":     15,
-						"sulfur":  5,
-						"gold":	4500
+						"wood":    7,
+						"mercury": 2,
+						"ore":     7,
+						"sulfur":  2,
+						"gold":	2500
 					},
 					"requires" : 
 					[
@@ -246,9 +246,9 @@
 				
 					"cost" :
 					{
-						"wood":    25,
-						"mercury": 10,
-						"gold":	7500
+						"wood":    10,
+						"mercury": 5,
+						"gold":	3000
 					},
 					"requires" : 
 					[
@@ -266,10 +266,10 @@
 					"name" : "{Upg. Hydra Pond}",	
 					"cost" :
 					{
-						"wood":    20,
-						"ore":     20,
-						"sulfur":  30,
-						"gold":	25000
+						"wood":    5,
+						"ore":     5,
+						"sulfur":  7,
+						"gold":	5000
 					},
 					"requires" : 
 					[
