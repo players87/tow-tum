@@ -17,10 +17,10 @@
 		},
 		"advMapAmount" : { "max" : 8, "min" : 3 },
 		"aiValue" : 2950,
-		"attack" : 18,
-		"cost" : { "gold" : 4000, "ore" : 2 },
-		"damage" : { "max" : 50, "min" : 40 },
-		"defense" : 25,
+		"attack" : 35,
+		"cost" : { "gold" : 40000, "ore" : 20 },
+		"damage" : { "max" : 90, "min" : 70 },
+		"defense" : 55,
 		"faction" : "tower",
 		"fightValue" : 3550,
 		"graphics" : {
@@ -32,7 +32,7 @@
 			"timeBetweenFidgets" : 1
 		},
 		"growth" : 1,
-		"hitPoints" : 300,
+		"hitPoints" : 2000,
         "doubleWide" : true,
 		"level" : 7,
 		"name" : { "plural" : "Dragon Golems", "singular" : "Dragon Golem" },
